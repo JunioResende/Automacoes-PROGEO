@@ -686,3 +686,379 @@ arcpy.AddField_management(export_shapefile, "percent",
                           "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
 arcpy.CalculateField_management(
     export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
+
+# 15_Hidrogenio_Mais_Aluminio_poly
+# Variaveis
+input_shapefile = "15_Hidrogenio_Mais_Aluminio_poly"
+export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\15_Hidrogenio_Mais_Aluminio.shp"
+
+arcpy.AddField_management(input_shapefile, "dis", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Select and Calculate
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\" >=0 And \"15_Hidroge\"<2")
+arcpy.CalculateField_management(input_shapefile, "dis", "6", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=2 And \"15_Hidroge\"<3")
+arcpy.CalculateField_management(input_shapefile, "dis", "5", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=3 And \"15_Hidroge\"<4")
+arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=4 And \"15_Hidroge\"<5")
+arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=5 And \"15_Hidroge\"<6")
+arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=6 And \"15_Hidroge\"<1000")
+arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
+
+# Dissolve
+arcpy.Dissolve_management(
+    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
+arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(export_shapefile, "atribute", "15", "VB", "")
+arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
+arcpy.AddField_management(export_shapefile, "percent",
+                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
+
+# 16_Saturacao_por_Aluminio_poly
+# Variaveis
+input_shapefile = "16_Saturacao_por_Aluminio_poly"
+export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\16_Saturacao_por_Aluminio.shp"
+
+arcpy.AddField_management(input_shapefile, "dis", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Select and Calculate
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"16_Saturac\">=0 And \"16_Saturac\"<2")
+arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"16_Saturac\">=2 And \"16_Saturac\"<4")
+arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"16_Saturac\">=4 And \"16_Saturac\"<6")
+arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"16_Saturac\">=6 And \"16_Saturac\"<1000")
+arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
+
+# Dissolve
+arcpy.Dissolve_management(
+    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
+arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(export_shapefile, "atribute", "16", "VB", "")
+arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
+arcpy.AddField_management(export_shapefile, "percent",
+                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
+
+
+# 17_Potassio_ppm_poly
+# Variaveis
+input_shapefile = "17_Potassio_ppm_poly"
+export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\17_Potassio_ppm.shp"
+
+arcpy.AddField_management(input_shapefile, "dis", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Select and Calculate
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\" >=0 And \"17_Potassi\"<15")
+arcpy.CalculateField_management(input_shapefile, "dis", "20", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=15 And \"17_Potassi\"<20")
+arcpy.CalculateField_management(input_shapefile, "dis", "19", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=20 And \"17_Potassi\"<25")
+arcpy.CalculateField_management(input_shapefile, "dis", "18", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=25 And \"17_Potassi\"<30")
+arcpy.CalculateField_management(input_shapefile, "dis", "17", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=30 And \"17_Potassi\"<35")
+arcpy.CalculateField_management(input_shapefile, "dis", "16", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=35 And \"17_Potassi\"<40")
+arcpy.CalculateField_management(input_shapefile, "dis", "15", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=40 And \"17_Potassi\"<45")
+arcpy.CalculateField_management(input_shapefile, "dis", "14", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=45 And \"17_Potassi\"<50")
+arcpy.CalculateField_management(input_shapefile, "dis", "13", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=50 And \"17_Potassi\"<55")
+arcpy.CalculateField_management(input_shapefile, "dis", "12", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=55 And \"17_Potassi\"<60")
+arcpy.CalculateField_management(input_shapefile, "dis", "11", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=60 And \"17_Potassi\"<65")
+arcpy.CalculateField_management(input_shapefile, "dis", "10", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=65 And \"17_Potassi\"<70")
+arcpy.CalculateField_management(input_shapefile, "dis", "9", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=70 And \"17_Potassi\"<75")
+arcpy.CalculateField_management(input_shapefile, "dis", "8", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=75 And \"17_Potassi\"<80")
+arcpy.CalculateField_management(input_shapefile, "dis", "7", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=80 And \"17_Potassi\"<90")
+arcpy.CalculateField_management(input_shapefile, "dis", "6", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=90 And \"17_Potassi\"<100")
+arcpy.CalculateField_management(input_shapefile, "dis", "5", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=100 And \"17_Potassi\"<120")
+arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=120 And \"17_Potassi\"<140")
+arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=140 And \"17_Potassi\"<160")
+arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=160 And \"17_Potassi\"<1000")
+arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
+
+# Dissolve
+arcpy.Dissolve_management(
+    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
+arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(export_shapefile, "atribute", "17", "VB", "")
+arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
+arcpy.AddField_management(export_shapefile, "percent",
+                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
+
+# 18_Fosforo_Mehlich_poly
+# Variaveis
+input_shapefile = "18_Fosforo_Mehlich_poly"
+export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\18_Fosforo_Mehlich.shp"
+
+arcpy.AddField_management(input_shapefile, "dis", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Select and Calculate
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"18_Fosforo\">=0 And \"18_Fosforo\"<5")
+arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"18_Fosforo\">=5 And \"18_Fosforo\"<10")
+arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"18_Fosforo\">=10 And \"18_Fosforo\"<14")
+arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"18_Fosforo\">=14 And \"18_Fosforo\"<1000")
+arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
+
+# Dissolve
+arcpy.Dissolve_management(
+    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
+arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(export_shapefile, "atribute", "18", "VB", "")
+arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
+arcpy.AddField_management(export_shapefile, "percent",
+                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
+
+
+# 19_Potassio_poly
+# Variaveis
+input_shapefile = "19_Potassio_poly"
+export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\19_Potassio.shp"
+
+arcpy.AddField_management(input_shapefile, "dis", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Select and Calculate
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"19_Potassi\" >=0 And \"19_Potassi\"<0.13")
+arcpy.CalculateField_management(input_shapefile, "dis", "7", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"19_Potassi\">=0.13 And \"19_Potassi\"<0.14")
+arcpy.CalculateField_management(input_shapefile, "dis", "6", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"19_Potassi\">=0.14 And \"19_Potassi\"<0.17")
+arcpy.CalculateField_management(input_shapefile, "dis", "5", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"19_Potassi\">=0.17 And \"19_Potassi\"<0.21")
+arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"19_Potassi\">=0.21 And \"19_Potassi\"<0.24")
+arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"19_Potassi\">=0.24 And \"19_Potassi\"<0.28")
+arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"19_Potassi\">=0.28 And \"19_Potassi\"<1")
+arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
+
+# Dissolve
+arcpy.Dissolve_management(
+    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
+arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(export_shapefile, "atribute", "19", "VB", "")
+arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
+arcpy.AddField_management(export_shapefile, "percent",
+                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
+
+
+# 20_Enxofre_poly
+# Variaveis
+input_shapefile = "20_Enxofre_poly"
+export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\20_Enxofre.shp"
+
+arcpy.AddField_management(input_shapefile, "dis", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Select and Calculate
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"20_Enxofre\" >=0 And \"20_Enxofre\"<2.5")
+arcpy.CalculateField_management(input_shapefile, "dis", "7", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"20_Enxofre\">=2.5 And \"20_Enxofre\"<4.9")
+arcpy.CalculateField_management(input_shapefile, "dis", "6", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"20_Enxofre\">=4.9 And \"20_Enxofre\"<9")
+arcpy.CalculateField_management(input_shapefile, "dis", "5", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"20_Enxofre\">=9 And \"20_Enxofre\"<10")
+arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"20_Enxofre\">=10 And \"20_Enxofre\"<18")
+arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
+
+# Dissolve
+arcpy.Dissolve_management(
+    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
+arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(export_shapefile, "atribute", "20", "VB", "")
+arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
+arcpy.AddField_management(export_shapefile, "percent",
+                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
+
+
+# 21_Boro_poly
+# Variaveis
+input_shapefile = "21_Boro_poly"
+export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\21_Boro.shp"
+
+arcpy.AddField_management(input_shapefile, "dis", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# Select and Calculate
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"21_Boro_mg\" >=0 And \"21_Boro_mg\"<0.15")
+arcpy.CalculateField_management(input_shapefile, "dis", "7", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"21_Boro_mg\">=0.15 And \"21_Boro_mg\"<0.35")
+arcpy.CalculateField_management(input_shapefile, "dis", "6", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"21_Boro_mg\">=0.35 And \"21_Boro_mg\"<0.60")
+arcpy.CalculateField_management(input_shapefile, "dis", "5", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"21_Boro_mg\">=0.60 And \"21_Boro_mg\"<0.9")
+arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
+
+arcpy.SelectLayerByAttribute_management(
+    input_shapefile, "NEW_SELECTION", "\"21_Boro_mg\">=0.90 And \"21_Boro_mg\"<1000")
+arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
+
+# Dissolve
+arcpy.Dissolve_management(
+    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
+arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
+                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(export_shapefile, "atribute", "21", "VB", "")
+arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
+arcpy.AddField_management(export_shapefile, "percent",
+                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+arcpy.CalculateField_management(
+    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
