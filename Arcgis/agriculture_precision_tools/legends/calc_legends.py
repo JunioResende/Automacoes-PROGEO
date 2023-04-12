@@ -3,7 +3,6 @@ import arcpy
 # Argila
 # Variaveis
 input_shapefile = "3_Argila_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\3_Argila.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -53,26 +52,11 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=400 And \"3_Argila_g\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "3", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # Areia
 # Variaveis
 input_shapefile = "4_Areia_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\4_Areia.shp"
+
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -114,26 +98,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"4_Areia_g_\">=800 And \"4_Areia_g_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "4", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # Silte
 # Variaveis
 input_shapefile = "5_Silte_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\5_Silte.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -163,26 +131,9 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"5_Silte_g_\">=250 And \"5_Silte_g_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "5", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
-
 # Materia_Organica
 # Variaveis
 input_shapefile = "6_Materia_Organica_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\6_Materia_Organica.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -224,26 +175,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"6_Materia_\">=38 And \"6_Materia_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "6", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # Carbono_Organico
 # Variaveis
 input_shapefile = "7_Carbono_Organico_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\7_Carbono_Organico.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -273,26 +208,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=19.60 And \"7_Carbono_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "7", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 8_CTC_Total_poly
 # Variaveis
 input_shapefile = "8_CTC_Total_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\8_CTC_Total.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -334,26 +253,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"8_CTC_Tota\">=9 And \"8_CTC_Tota\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "8", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 9_pH_Cloreto_de_Calcio
 # Variaveis
 input_shapefile = "9_pH_Cloreto_de_Calcio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\9_pH_Cloreto_de_Calcio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -383,26 +286,9 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"9_pH_Clore\">=6.4 And \"9_pH_Clore\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "9", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
-
 # 10_Saturacao_de_Bases_poly
 # Variaveis
 input_shapefile = "10_Saturacao_de_Bases_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\10_Saturacao_de_Bases.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -444,26 +330,9 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"10_Saturac\">=60 And \"10_Saturac\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "10", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
-
 # 11_Calcio_poly
 # Variaveis
 input_shapefile = "11_Calcio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\11_Calcio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -509,26 +378,9 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"11_Calcio_\">=5 And \"11_Calcio_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "11", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
-
 # 12_Magnesio_poly
 # Variaveis
 input_shapefile = "12_Magnesio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\12_Magnesio_poly.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -582,26 +434,9 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"12_Magnesi\">=5 And \"12_Magnesi\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "12", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
-
 # 13_Calcio_Mais_Magnesio_poly
 # Variaveis
 input_shapefile = "13_Calcio_Mais_Magnesio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\13_Calcio_Mais_Magnesio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -631,26 +466,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"13_Calcio_\">=7 And \"13_Calcio_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "13", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 14_Aluminio_poly
 # Variaveis
 input_shapefile = "14_Aluminio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\14_Aluminio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -672,25 +491,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"14_Alumini\">=0.6 And \"14_Alumini\"<1")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "14", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
 
 # 15_Hidrogenio_Mais_Aluminio_poly
 # Variaveis
 input_shapefile = "15_Hidrogenio_Mais_Aluminio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\15_Hidrogenio_Mais_Aluminio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -720,25 +524,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=6 And \"15_Hidroge\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "15", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
 
 # 16_Saturacao_por_Aluminio_poly
 # Variaveis
 input_shapefile = "16_Saturacao_por_Aluminio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\16_Saturacao_por_Aluminio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -760,26 +549,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"16_Saturac\">=6 And \"16_Saturac\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "16", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 17_Potassio_ppm_poly
 # Variaveis
 input_shapefile = "17_Potassio_ppm_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\17_Potassio_ppm.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -865,25 +638,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"17_Potassi\">=160 And \"17_Potassi\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "17", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
 
 # 18_Fosforo_Mehlich_poly
 # Variaveis
 input_shapefile = "18_Fosforo_Mehlich_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\18_Fosforo_Mehlich.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -905,26 +663,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"18_Fosforo\">=14 And \"18_Fosforo\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "18", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 19_Potassio_poly
 # Variaveis
 input_shapefile = "19_Potassio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\19_Potassio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -958,26 +700,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"19_Potassi\">=0.28 And \"19_Potassi\"<1")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "19", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 20_Enxofre_poly
 # Variaveis
 input_shapefile = "20_Enxofre_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\20_Enxofre.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1003,26 +729,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"20_Enxofre\">=10 And \"20_Enxofre\"<18")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "20", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 21_Boro_poly
 # Variaveis
 input_shapefile = "21_Boro_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\21_Boro.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1048,26 +758,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"21_Boro_mg\">=0.90 And \"21_Boro_mg\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "21", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 22_Calcio_CTC_poly
 # Variaveis
 input_shapefile = "22_Calcio_CTC_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\22_Calcio_CTC.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1109,26 +803,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"22_Calcio_\">=70 And \"22_Calcio_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "22", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 23_Magnesio_CTC_poly
 # Variaveis
 input_shapefile = "23_Magnesio_CTC_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\23_Magnesio_CTC.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1154,26 +832,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"23_Magnesi\">=20 And \"23_Magnesi\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "23", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 24_Potassio_CTC_poly
 # Variaveis
 input_shapefile = "24_Potassio_CTC_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\24_Potassio_CTC.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1203,26 +865,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"24_Potassi\">=6 And \"24_Potassi\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "24", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 25_Hidrogenio_Mais_Aluminio_CTC_poly
 # Variaveis
 input_shapefile = "25_Hidrogenio_Mais_Aluminio_CTC_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\25_Hidrogenio_Mais_Aluminio_CTC.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1252,26 +898,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"25_Hidroge\">=60 And \"25_Hidroge\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "25", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 26_Relacao_Calcio_Magnesio_poly
 # Variaveis
 input_shapefile = "26_Relacao_Calcio_Magnesio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\26_Relacao_Calcio_Magnesio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1301,25 +931,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"26_Relacao\">=5 And \"26_Relacao\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "26", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
 
 # 27_Relacao_Calcio_Potassio_poly
 # Variaveis
 input_shapefile = "27_Relacao_Calcio_Potassio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\27_Relacao_Calcio_Potassio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1349,26 +964,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"27_Relacao\">=15 And \"27_Relacao\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "27", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 28_Relacao_Magnesio_Potassio_poly
 # Variaveis
 input_shapefile = "28_Relacao_Magnesio_Potassio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\28_Relacao_Magnesio_Potassio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1402,26 +1001,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"28_Relacao\">=6 And \"28_Relacao\"<7")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "28", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 29_Cobre_poly
 # Variaveis
 input_shapefile = "29_Cobre_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\29_Cobre.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1443,26 +1026,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"29_Cobre_m\">=3 And \"29_Cobre_m\"<10")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "29", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 30_Ferro_poly
 # Variaveis
 input_shapefile = "30_Ferro_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\30_Ferro.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1488,26 +1055,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"30_Ferro_m\">=220 And \"30_Ferro_m\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "30", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 31_Manganes_poly
 # Variaveis
 input_shapefile = "31_Manganes_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\31_Manganes_poly.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1529,26 +1080,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"31_Mangane\">=130 And \"31_Mangane\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "31", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 32_Zinco_poly
 # Variaveis
 input_shapefile = "32_Zinco_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\32_Zinco_poly.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1570,26 +1105,10 @@ arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"32_Zinco_m\">=5 And \"32_Zinco_m\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "32", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
-
 
 # 33_Sodio_poly
 # Variaveis
 input_shapefile = "33_Sodio_poly"
-export_shapefile = "C:\\Users\\junio\\Desktop\\Nova pasta\\33_Sodio.shp"
 
 arcpy.AddField_management(input_shapefile, "dis", "SHORT",
                           "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -1622,18 +1141,3 @@ arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
 arcpy.SelectLayerByAttribute_management(
     input_shapefile, "NEW_SELECTION", "\"33_Sodio_m\">=6 And \"33_Sodio_m\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
-
-# Dissolve
-arcpy.Dissolve_management(
-    input_shapefile, export_shapefile, "dis", "", "MULTI_PART", "DISSOLVE_LINES")
-arcpy.AddField_management(export_shapefile, "atribute", "SHORT",
-                          "2", "", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(export_shapefile, "atribute", "33", "VB", "")
-arcpy.AddField_management(export_shapefile, "area", "DOUBLE",
-                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "area", "!shape.area!/10000", "PYTHON_9.3", "")
-arcpy.AddField_management(export_shapefile, "percent",
-                          "DOUBLE", "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
-arcpy.CalculateField_management(
-    export_shapefile, "percent", "([area]*100)/513.50", "VB", "")
