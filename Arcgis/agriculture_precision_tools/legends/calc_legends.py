@@ -18,7 +18,7 @@ arcpy.SelectLayerByAttribute_management(
 arcpy.CalculateField_management(input_shapefile, "dis", "10", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=150 And \"3_Argila_g\"<150")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=150 And \"3_Argila_g\"<180")
 arcpy.CalculateField_management(input_shapefile, "dis", "9", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
