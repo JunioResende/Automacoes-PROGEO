@@ -2,7 +2,7 @@
 import arcpy
 
 Input = "3_Argila_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\3_Argila.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\3_Argila.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -34,7 +34,7 @@ arcpy.CalculateField_management(
 # 4_Areia
 
 Input = "4_Areia_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\4_Areia.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\4_Areia.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -66,7 +66,7 @@ arcpy.CalculateField_management(
 # 5_Silte
 
 Input = "5_Silte_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\5_Silte.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\5_Silte.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -98,7 +98,7 @@ arcpy.CalculateField_management(
 # 6_Materia_Organica
 
 Input = "6_Materia_Organica_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\6_Materia_Organica.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\6_Materia_Organica.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -130,7 +130,7 @@ arcpy.CalculateField_management(
 # 7_Carbono_Organico
 
 Input = "7_Carbono_Organico_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\7_Carbono_Organico.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\7_Carbono_Organico.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -162,7 +162,7 @@ arcpy.CalculateField_management(
 # 8_CTC_Total
 
 Input = "8_CTC_Total_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\8_CTC_Total.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\8_CTC_Total.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -194,7 +194,7 @@ arcpy.CalculateField_management(
 # 9_pH_Cloreto_de_Calcio
 
 Input = "9_pH_Cloreto_de_Calcio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\9_pH_Cloreto_de_Calcio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\9_pH_Cloreto_de_Calcio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -226,7 +226,7 @@ arcpy.CalculateField_management(
 # 10_Saturacao_de_Bases
 
 Input = "10_Saturacao_de_Bases_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\10_Saturacao_de_Bases.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\10_Saturacao_de_Bases.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -259,7 +259,7 @@ arcpy.CalculateField_management(
 # 11_Calcio
 
 Input = "11_Calcio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\11_Calcio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\11_Calcio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -292,7 +292,7 @@ arcpy.CalculateField_management(
 # 12_Magnesio
 
 Input = "12_Magnesio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\12_Magnesio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\12_Magnesio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -325,7 +325,7 @@ arcpy.CalculateField_management(
 # 13_Calcio_Mais_Magnesio
 
 Input = "13_Calcio_Mais_Magnesio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\13_Calcio_Mais_Magnesio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\13_Calcio_Mais_Magnesio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -358,7 +358,7 @@ arcpy.CalculateField_management(
 # 14_Aluminio
 
 Input = "14_Aluminio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\14_Aluminio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\14_Aluminio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -391,7 +391,7 @@ arcpy.CalculateField_management(
 # 15_Hidrogenio_Mais_Aluminio
 
 Input = "15_Hidrogenio_Mais_Aluminio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\15_Hidrogenio_Mais_Aluminio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\15_Hidrogenio_Mais_Aluminio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -424,7 +424,7 @@ arcpy.CalculateField_management(
 # 16_Saturacao_por_Aluminio
 
 Input = "16_Saturacao_por_Aluminio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\16_Saturacao_por_Aluminio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\16_Saturacao_por_Aluminio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -457,7 +457,7 @@ arcpy.CalculateField_management(
 # 17_Potassio_ppm
 
 Input = "17_Potassio_ppm_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\17_Potassio_ppm.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\17_Potassio_ppm.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -490,7 +490,7 @@ arcpy.CalculateField_management(
 # 18_Fosforo_Mehlich
 
 Input = "18_Fosforo_Mehlich_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\18_Fosforo_Mehlich.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\18_Fosforo_Mehlich.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -523,7 +523,7 @@ arcpy.CalculateField_management(
 # 19_Potassio
 
 Input = "19_Potassio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\19_Potassio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\19_Potassio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -556,7 +556,7 @@ arcpy.CalculateField_management(
 # 20_Enxofre
 
 Input = "20_Enxofre_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\20_Enxofre.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\20_Enxofre.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -589,7 +589,7 @@ arcpy.CalculateField_management(
 # 21_Boro
 
 Input = "21_Boro_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\21_Boro.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\21_Boro.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -622,7 +622,7 @@ arcpy.CalculateField_management(
 # 22_Calcio_CTC
 
 Input = "22_Calcio_CTC_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\22_Calcio_CTC.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\22_Calcio_CTC.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -655,7 +655,7 @@ arcpy.CalculateField_management(
 # 23_Magnesio_CTC
 
 Input = "23_Magnesio_CTC_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\23_Magnesio_CTC.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\23_Magnesio_CTC.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -688,7 +688,7 @@ arcpy.CalculateField_management(
 # 24_Potassio_CTC
 
 Input = "24_Potassio_CTC_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\24_Potassio_CTC.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\24_Potassio_CTC.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -721,7 +721,7 @@ arcpy.CalculateField_management(
 # 25_Hidrogenio_Mais_Aluminio_CTC
 
 Input = "25_Hidrogenio_Mais_Aluminio_CTC_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\25_Hidrogenio_Mais_Aluminio_CTC.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\25_Hidrogenio_Mais_Aluminio_CTC.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -754,7 +754,7 @@ arcpy.CalculateField_management(
 # 26_Relacao_Calcio_Magnesio
 
 Input = "26_Relacao_Calcio_Magnesio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\26_Relacao_Calcio_Magnesio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\26_Relacao_Calcio_Magnesio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -787,7 +787,7 @@ arcpy.CalculateField_management(
 # 27_Relacao_Calcio_Potassio
 
 Input = "27_Relacao_Calcio_Potassio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\27_Relacao_Calcio_Potassio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\27_Relacao_Calcio_Potassio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -820,7 +820,7 @@ arcpy.CalculateField_management(
 # 28_Relacao_Magnesio_Potassio
 
 Input = "28_Relacao_Magnesio_Potassio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\28_Relacao_Magnesio_Potassio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\28_Relacao_Magnesio_Potassio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -853,7 +853,7 @@ arcpy.CalculateField_management(
 # 29_Cobre
 
 Input = "29_Cobre_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\29_Cobre.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\29_Cobre.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -886,7 +886,7 @@ arcpy.CalculateField_management(
 # 30_Ferro
 
 Input = "30_Ferro_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\30_Ferro.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\30_Ferro.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -919,7 +919,7 @@ arcpy.CalculateField_management(
 # 31_Manganes
 
 Input = "31_Manganes_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\31_Manganes.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\31_Manganes.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -952,7 +952,7 @@ arcpy.CalculateField_management(
 # 32_Zinco
 
 Input = "32_Zinco_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\32_Zinco.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\32_Zinco.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added
@@ -985,7 +985,7 @@ arcpy.CalculateField_management(
 # 33_Sodio
 
 Input = "33_Sodio_poly"
-Output = "C:\\Users\\junio\\Desktop\\Nova pasta\\Nova pasta\\33_Sodio.shp"
+Output = "C:\\Users\\junio\\Desktop\\Shapefiles\\3-Legends\\2-Dis_Fields\\33_Sodio.shp"
 Atribute_Field_Added = Output
 Field_Area_Added = Atribute_Field_Added
 Field_Percent_Added = Field_Area_Added

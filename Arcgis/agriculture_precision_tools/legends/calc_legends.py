@@ -726,7 +726,7 @@ arcpy.SelectLayerByAttribute_management(
 arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"20_Enxofre\">=10 And \"20_Enxofre\"<18")
+    input_shapefile, "NEW_SELECTION", "\"20_Enxofre\">=10 And \"20_Enxofre\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
 
