@@ -680,3 +680,1432 @@ arcpy.CalculateField_management(Selected, "dis", "33", "VB", "")
 
 arcpy.Dissolve_management(Field_Calculated, Saida, "dis",
                           "33_Sodio_m MIN;33_Sodio_m MAX;33_Sodio_m MEAN;33_Sodio_m SUM;33_Sodio_m COUNT", "MULTI_PART", "DISSOLVE_LINES")
+
+
+# ADD FIELDS
+# 3_Argila
+
+Entrada = "3_Argila"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 4_Areia
+
+Entrada = "4_Areia"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 5_Silte
+
+Entrada = "5_Silte"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 6_Materia_Organica
+
+Entrada = "6_Materia_Organica"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 7_Carbono_Organico
+
+Entrada = "7_Carbono_Organico"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 8_CTC_Total
+
+Entrada = "8_CTC_Total"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 9_pH_Cloreto_de_Calcio
+
+Entrada = "9_pH_Cloreto_de_Calcio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 10_Saturacao_de_Bases
+
+Entrada = "10_Saturacao_de_Bases"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 11_Calcio
+
+Entrada = "11_Calcio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 12_Magnesio
+
+Entrada = "12_Magnesio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 13_Calcio_Mais_Magnesio
+
+Entrada = "13_Calcio_Mais_Magnesio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 14_Aluminio
+
+Entrada = "14_Aluminio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 15_Hidrogenio_Mais_Aluminio
+
+Entrada = "15_Hidrogenio_Mais_Aluminio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 16_Saturacao_por_Aluminio
+
+Entrada = "16_Saturacao_por_Aluminio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 17_Potassio_ppm
+
+Entrada = "17_Potassio_ppm"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 18_Fosforo_Mehlich
+
+Entrada = "18_Fosforo_Mehlich"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 19_Potassio
+
+Entrada = "19_Potassio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 20_Enxofre
+
+Entrada = "20_Enxofre"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 21_Boro
+
+Entrada = "21_Boro"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 22_Calcio_CTC
+
+Entrada = "22_Calcio_CTC"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 23_Magnesio_CTC
+
+Entrada = "23_Magnesio_CTC"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 24_Potassio_CTC
+
+Entrada = "24_Potassio_CTC"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 25_Hidrogenio_Mais_Aluminio_CTC
+
+Entrada = "25_Hidrogenio_Mais_Aluminio_CTC"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 26_Relacao_Calcio_Magnesio
+
+Entrada = "26_Relacao_Calcio_Magnesio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 27_Relacao_Calcio_Potassio
+
+Entrada = "27_Relacao_Calcio_Potassio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 28_Relacao_Magnesio_Potassio
+
+Entrada = "28_Relacao_Magnesio_Potassio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 29_Cobre
+
+Entrada = "29_Cobre"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 30_Ferro
+
+Entrada = "30_Ferro"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 31_Manganes
+
+Entrada = "31_Manganes"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 32_Zinco
+
+Entrada = "32_Zinco"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# 33_Sodio
+
+Entrada = "33_Sodio"
+MIN_ADDED = Entrada
+MAX_Added = MIN_ADDED
+MEAN_ADDED = MAX_Added
+SUM_ADDED = MEAN_ADDED
+COUNT_ADDED = SUM_ADDED
+
+arcpy.AddField_management(Entrada, "MIN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MIN_ADDED, "MAX", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MAX_Added, "MEAN", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(MEAN_ADDED, "SUM", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+arcpy.AddField_management(SUM_ADDED, "COUNT", "DOUBLE",
+                          "10", "2", "", "", "NULLABLE", "NON_REQUIRED", "")
+
+# CALC FIELDS
+# 3_Argila
+
+Entrada = "3_Argila"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_3_Argi]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_3_Argi]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_3_Arg]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_3_Argi]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_3_Ar]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_3_Argi;MAX_3_Argi;MEAN_3_Arg;SUM_3_Argi;COUNT_3_Ar")
+
+# 4_Areia
+
+Entrada = "4_Areia"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_4_Arei]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_4_Arei]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_4_Are]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_4_Arei]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_4_Ar]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_4_Arei;MAX_4_Arei;MEAN_4_Are;SUM_4_Arei;COUNT_4_Ar")
+
+# 5_Silte
+
+Entrada = "5_Silte"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_5_Silt]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_5_Silt]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_5_Sil]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_5_Silt]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_5_Si]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_5_Silt;MAX_5_Silt;MEAN_5_Sil;SUM_5_Silt;COUNT_5_Si")
+
+# 6_Materia_Organica
+
+Entrada = "6_Materia_Organica"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_6_Mate]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_6_Mate]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_6_Mat]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_6_Mate]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_6_Ma]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_6_Mate;MAX_6_Mate;MEAN_6_Mat;SUM_6_Mate;COUNT_6_Ma")
+
+# 7_Carbono_Organico
+
+Entrada = "7_Carbono_Organico"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_7_Carb]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_7_Carb]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_7_Car]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_7_Carb]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_7_Ca]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_7_Carb;MAX_7_Carb;MEAN_7_Car;SUM_7_Carb;COUNT_7_Ca")
+
+# 8_CTC_Total
+
+Entrada = "8_CTC_Total"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_8_CTC_]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_8_CTC_]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_8_CTC]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_8_CTC_]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_8_CT]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_8_CTC_;MAX_8_CTC_;MEAN_8_CTC;SUM_8_CTC_;COUNT_8_CT")
+
+# 9_pH_Cloreto_de_Calcio
+
+Entrada = "9_pH_Cloreto_de_Calcio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_9_pH_C]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_9_pH_C]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_9_pH_]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_9_pH_C]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_9_pH]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_9_pH_C;MAX_9_pH_C;MEAN_9_pH_;SUM_9_pH_C;COUNT_9_pH")
+
+# 10_Saturacao_de_Bases
+
+Entrada = "10_Saturacao_de_Bases"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_10_Sat]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_10_Sat]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_10_Sa]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_10_Sat]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_10_S]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_10_Sat;MAX_10_Sat;MEAN_10_Sa;SUM_10_Sat;COUNT_10_S")
+
+# 11_Calcio
+
+Entrada = "11_Calcio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_11_Cal]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_11_Cal]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_11_Ca]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_11_Cal]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_11_C]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_11_Cal;MAX_11_Cal;MEAN_11_Ca;SUM_11_Cal;COUNT_11_C")
+
+# 12_Magnesio
+
+Entrada = "12_Magnesio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_12_Mag]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_12_Mag]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_12_Ma]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_12_Mag]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_12_M]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_12_Mag;MAX_12_Mag;MEAN_12_Ma;SUM_12_Mag;COUNT_12_M")
+
+# 13_Calcio_Mais_Magnesio
+
+Entrada = "13_Calcio_Mais_Magnesio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_13_Cal]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_13_Cal]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_13_Ca]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_13_Cal]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_13_C]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_13_Cal;MAX_13_Cal;MEAN_13_Ca;SUM_13_Cal;COUNT_13_C")
+
+# 14_Aluminio
+
+Entrada = "14_Aluminio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_14_Alu]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_14_Alu]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_14_Al]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_14_Alu]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_14_A]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_14_Alu;MAX_14_Alu;MEAN_14_Al;SUM_14_Alu;COUNT_14_A")
+
+# 15_Hidrogenio_Mais_Aluminio
+
+Entrada = "15_Hidrogenio_Mais_Aluminio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_15_Hid]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_15_Hid]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_15_Hi]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_15_Hid]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_15_H]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_15_Hid;MAX_15_Hid;MEAN_15_Hi;SUM_15_Hid;COUNT_15_H")
+
+# 16_Saturacao_por_Aluminio
+
+Entrada = "16_Saturacao_por_Aluminio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_16_Sat]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_16_Sat]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_16_Sa]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_16_Sat]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_16_S]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_16_Sat;MAX_16_Sat;MEAN_16_Sa;SUM_16_Sat;COUNT_16_S")
+
+# 17_Potassio_ppm
+
+Entrada = "17_Potassio_ppm"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_17_Pot]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_17_Pot]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_17_Po]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_17_Pot]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_17_P]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_17_Pot;MAX_17_Pot;MEAN_17_Po;SUM_17_Pot;COUNT_17_P")
+
+# 18_Fosforo_Mehlich
+
+Entrada = "18_Fosforo_Mehlich"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_18_Fos]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_18_Fos]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_18_Fo]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_18_Fos]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_18_F]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_18_Fos;MAX_18_Fos;MEAN_18_Fo;SUM_18_Fos;COUNT_18_F")
+
+# 19_Potassio
+
+Entrada = "19_Potassio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_19_Pot]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_19_Pot]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_19_Po]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_19_Pot]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_19_P]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_19_Pot;MAX_19_Pot;MEAN_19_Po;SUM_19_Pot;COUNT_19_P")
+
+# 20_Enxofre
+
+Entrada = "20_Enxofre"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_20_Enx]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_20_Enx]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_20_En]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_20_Enx]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_20_E]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_20_Enx;MAX_20_Enx;MEAN_20_En;SUM_20_Enx;COUNT_20_E")
+
+# 21_Boro
+
+Entrada = "21_Boro"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_21_Bor]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_21_Bor]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_21_Bo]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_21_Bor]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_21_B]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_21_Bor;MAX_21_Bor;MEAN_21_Bo;SUM_21_Bor;COUNT_21_B")
+
+# 22_Calcio_CTC
+
+Entrada = "22_Calcio_CTC"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_22_Cal]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_22_Cal]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_22_Ca]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_22_Cal]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_22_C]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_22_Cal;MAX_22_Cal;MEAN_22_Ca;SUM_22_Cal;COUNT_22_C")
+
+# 23_Magnesio_CTC
+
+Entrada = "23_Magnesio_CTC"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_23_Mag]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_23_Mag]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_23_Ma]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_23_Mag]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_23_M]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_23_Mag;MAX_23_Mag;MEAN_23_Ma;SUM_23_Mag;COUNT_23_M")
+
+# 24_Potassio_CTC
+
+Entrada = "24_Potassio_CTC"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_24_Pot]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_24_Pot]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_24_Po]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_24_Pot]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_24_P]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_24_Pot;MAX_24_Pot;MEAN_24_Po;SUM_24_Pot;COUNT_24_P")
+
+# 25_Hidrogenio_Mais_Aluminio_CTC
+
+Entrada = "25_Hidrogenio_Mais_Aluminio_CTC"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_25_Hid]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_25_Hid]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_25_Hi]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_25_Hid]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_25_H]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_25_Hid;MAX_25_Hid;MEAN_25_Hi;SUM_25_Hid;COUNT_25_H")
+
+# 26_Relacao_Calcio_Magnesio
+
+Entrada = "26_Relacao_Calcio_Magnesio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_26_Rel]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_26_Rel]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_26_Re]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_26_Rel]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_26_R]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_26_Rel;MAX_26_Rel;MEAN_26_Re;SUM_26_Rel;COUNT_26_R")
+
+# 27_Relacao_Calcio_Potassio
+
+Entrada = "27_Relacao_Calcio_Potassio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_27_Rel]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_27_Rel]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_27_Re]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_27_Rel]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_27_R]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_27_Rel;MAX_27_Rel;MEAN_27_Re;SUM_27_Rel;COUNT_27_R")
+
+# 28_Relacao_Magnesio_Potassio
+
+Entrada = "28_Relacao_Magnesio_Potassio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_28_Rel]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_28_Rel]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_28_Re]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_28_Rel]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_28_R]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_28_Rel;MAX_28_Rel;MEAN_28_Re;SUM_28_Rel;COUNT_28_R")
+
+# 29_Cobre
+
+Entrada = "29_Cobre"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_29_Cob]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_29_Cob]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_29_Co]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_29_Cob]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_29_C]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_29_Cob;MAX_29_Cob;MEAN_29_Co;SUM_29_Cob;COUNT_29_C")
+
+# 30_Ferro
+
+Entrada = "30_Ferro"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_30_Fer]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_30_Fer]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_30_Fe]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_30_Fer]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_30_F]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_30_Fer;MAX_30_Fer;MEAN_30_Fe;SUM_30_Fer;COUNT_30_F")
+
+# 31_Manganes
+
+Entrada = "31_Manganes"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_31_Man]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_31_Man]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_31_Ma]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_31_Man]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_31_M]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_31_Man;MAX_31_Man;MEAN_31_Ma;SUM_31_Man;COUNT_31_M")
+
+# 32_Zinco
+
+Entrada = "32_Zinco"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_32_Zin]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_32_Zin]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_32_Zi]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_32_Zin]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_32_Z]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_32_Zin;MAX_32_Zin;MEAN_32_Zi;SUM_32_Zin;COUNT_32_Z")
+
+# 33_Sodio
+
+Entrada = "33_Sodio"
+MIN_CALC = Entrada
+MAX_Calc = MIN_CALC
+MEAN_Calc = MAX_Calc
+SUM_Calc = MEAN_Calc
+COUNT_Calc = SUM_Calc
+
+arcpy.CalculateField_management(Entrada, "MIN", "[MIN_33_Sod]", "VB", "")
+
+arcpy.CalculateField_management(MIN_CALC, "MAX", "[MAX_33_Sod]", "VB", "")
+
+arcpy.CalculateField_management(MAX_Calc, "MEAN", "[MEAN_33_So]", "VB", "")
+
+arcpy.CalculateField_management(MEAN_Calc, "SUM", "[SUM_33_Sod]", "VB", "")
+
+arcpy.CalculateField_management(SUM_Calc, "COUNT", "[COUNT_33_S]", "VB", "")
+
+arcpy.DeleteField_management(
+    Entrada, "MIN_33_Sod;MAX_33_Sod;MEAN_33_So;SUM_33_Sod;COUNT_33_S")
