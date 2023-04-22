@@ -13,43 +13,43 @@ arcpy.SelectLayerByAttribute_management(
 arcpy.CalculateField_management(input_shapefile, "dis", "11", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=120 And \"3_Argila_g\"<150")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=120 And \"3_Argila_g\"<180")
 arcpy.CalculateField_management(input_shapefile, "dis", "10", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=150 And \"3_Argila_g\"<180")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=180 And \"3_Argila_g\"<220")
 arcpy.CalculateField_management(input_shapefile, "dis", "9", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=180 And \"3_Argila_g\"<200")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=220 And \"3_Argila_g\"<250")
 arcpy.CalculateField_management(input_shapefile, "dis", "8", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=200 And \"3_Argila_g\"<220")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=250 And \"3_Argila_g\"<300")
 arcpy.CalculateField_management(input_shapefile, "dis", "7", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=220 And \"3_Argila_g\"<240")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=300 And \"3_Argila_g\"<350")
 arcpy.CalculateField_management(input_shapefile, "dis", "6", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=240 And \"3_Argila_g\"<260")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=350 And \"3_Argila_g\"<400")
 arcpy.CalculateField_management(input_shapefile, "dis", "5", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=260 And \"3_Argila_g\"<280")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=400 And \"3_Argila_g\"<450")
 arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=280 And \"3_Argila_g\"<300")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=450 And \"3_Argila_g\"<500")
 arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=300 And \"3_Argila_g\"<400")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=500 And \"3_Argila_g\"<600")
 arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=400 And \"3_Argila_g\"<1000")
+    input_shapefile, "NEW_SELECTION", "\"3_Argila_g\">=600 And \"3_Argila_g\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
 
@@ -189,23 +189,23 @@ arcpy.SelectLayerByAttribute_management(
 arcpy.CalculateField_management(input_shapefile, "dis", "6", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=12 And \"7_Carbono_\"<13.90")
+    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=12 And \"7_Carbono_\"<14")
 arcpy.CalculateField_management(input_shapefile, "dis", "5", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=13.90 And \"7_Carbono_\"<15.80")
+    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=14 And \"7_Carbono_\"<16")
 arcpy.CalculateField_management(input_shapefile, "dis", "4", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=15.80 And \"7_Carbono_\"<17.70")
+    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=16 And \"7_Carbono_\"<18")
 arcpy.CalculateField_management(input_shapefile, "dis", "3", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=17.70 And \"7_Carbono_\"<19.60")
+    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=18 And \"7_Carbono_\"<20")
 arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=19.60 And \"7_Carbono_\"<1000")
+    input_shapefile, "NEW_SELECTION", "\"7_Carbono_\">=20 And \"7_Carbono_\"<1000")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
 
@@ -521,7 +521,7 @@ arcpy.SelectLayerByAttribute_management(
 arcpy.CalculateField_management(input_shapefile, "dis", "2", "VB", "")
 
 arcpy.SelectLayerByAttribute_management(
-    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=6 And \"15_Hidroge\"<1000")
+    input_shapefile, "NEW_SELECTION", "\"15_Hidroge\">=6 And \"15_Hidroge\"<7")
 arcpy.CalculateField_management(input_shapefile, "dis", "1", "VB", "")
 
 
