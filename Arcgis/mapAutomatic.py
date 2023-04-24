@@ -398,6 +398,10 @@ legend_size_height = "9,5161 cm"
 stats_position_X = 955
 stats_position_Y = 552
 
+# Variaveuis posicao numero da pagina
+number_page_position_X = 1162
+number_page_position_Y = 639
+
 # Argila
 # Alteracao Titulo do Mapa
 pyautogui.doubleClick(title_position_X, title_position_Y, duration=0.5)
@@ -427,7 +431,8 @@ pyautogui.press('enter')
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 sleep(1)
 # Alterar Pagina
-pyautogui.doubleClick(1162, 639)
+pyautogui.doubleClick(number_page_position_X,
+                      number_page_position_Y, duration=0.5)
 pyautogui.write('03', interval=0.1)
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 sleep(1)
