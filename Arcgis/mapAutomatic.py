@@ -402,6 +402,30 @@ stats_position_Y = 552
 number_page_position_X = 1162
 number_page_position_Y = 639
 
+# Variaveis posicao aba symbology
+symbology_position_X = 586
+symbology_position_Y = 127
+
+# Variaveis show Quanties
+quanties_position_X = 398
+quanties_position_Y = 248
+
+# Variaveis show categories
+categories_position_X = 398
+categories_position_Y = 248
+
+# Variaveis Value
+valueDis_position_X = 709
+valueDis_position_Y = 232
+
+# Variaveis Classes
+classes_position_X = 804
+classes_position_Y = 257
+
+# Variaveis click classifica
+click_classify_position_X = 670
+click_classify_position_Y = 451
+
 # Argila
 # Alteracao Titulo do Mapa
 pyautogui.doubleClick(title_position_X, title_position_Y, duration=0.5)
@@ -413,7 +437,7 @@ sleep(1)
 pyautogui.doubleClick(legend_title_position_X,
                       legend_title_position_Y, duration=0.5)
 pyautogui.press('delete')
-pyautogui.write("Argila (g/dm³)", interval=0.1)
+pyautogui.write("Argila (g/dm)", interval=0.1)
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 # Estatisticas
 pyautogui.doubleClick(stats_position_X, stats_position_Y, duration=0.5)
@@ -435,4 +459,19 @@ pyautogui.doubleClick(number_page_position_X,
                       number_page_position_Y, duration=0.5)
 pyautogui.write('03', interval=0.1)
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
+sleep(1)
+# Classificacao shp
+pyautogui.doubleClick(93, 173, duration=0.5)
+sleep(3)
+pyautogui.click(symbology_position_X, symbology_position_Y, duration=0.5)
+sleep(1)
+pyautogui.click(quanties_position_X, quanties_position_Y, duration=0.5)
+sleep(1)
+pyautogui.click(valueDis_position_X, valueDis_position_Y, duration=0.5)
+pyautogui.press('down')
+sleep(1)
+pyautogui.doubleClick(classes_position_X, classes_position_Y, duration=0.5)
+pyautogui.write('11')
+pyautogui.click(click_classify_position_X,
+                click_classify_position_Y, duration=0.5)
 sleep(1)
