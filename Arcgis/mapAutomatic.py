@@ -1472,3 +1472,276 @@ pyautogui.click(93, 173, button='right', duration=0.5)
 sleep(1)
 pyautogui.click(144, 201, duration=0.5)
 sleep(5)
+
+
+# Materia Organica
+# On shp
+pyautogui.click(51, 173, duration=0.5)
+sleep(1)
+# Alteracao Titulo do Mapa
+pyautogui.doubleClick(title_position_X, title_position_Y, duration=0.5)
+pyautogui.press('delete')
+pyautogui.write('Materia Organica', interval=0.1)
+pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
+sleep(1)
+# Alteracao Titulo Legenda
+pyautogui.doubleClick(legend_title_position_X,
+                      legend_title_position_Y, duration=0.5)
+pyautogui.press('delete')
+pyautogui.write("Materia Organica (g/dm)", interval=0.1)
+pyautogui.click(627, 255, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
+# Estatisticas
+pyautogui.doubleClick(stats_position_X, stats_position_Y, duration=0.5)
+pyautogui.press('delete')
+pyautogui.write(min_6, interval=0.1)
+pyautogui.press('enter')
+pyautogui.write(max_6, interval=0.1)
+pyautogui.press('enter')
+pyautogui.write(med_6, interval=0.1)
+pyautogui.press('enter')
+pyautogui.write(total_6, interval=0.1)
+pyautogui.press('enter')
+pyautogui.write(count_6, interval=0.1)
+pyautogui.press('enter')
+pyautogui.click(hotkey_min_position_X, hotkey_min_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(hotkey_max_position_X, hotkey_max_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(hotkey_med_position_X, hotkey_med_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(hotkey_total_position_X, hotkey_total_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
+sleep(1)
+# Alterar Pagina
+pyautogui.doubleClick(number_page_position_X,
+                      number_page_position_Y, duration=0.5)
+pyautogui.write('06', interval=0.1)
+pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
+sleep(1)
+# Classificacao shp
+pyautogui.doubleClick(93, 173, duration=0.5)
+sleep(3)
+# Aba Symbology
+pyautogui.click(symbology_position_X, symbology_position_Y, duration=0.5)
+sleep(1)
+# Categories
+pyautogui.click(389, 229, duration=0.5)
+sleep(1)
+# Add all values
+pyautogui.click(519, 474, duration=0.5)
+sleep(1)
+# Color Ramp
+pyautogui.click(904, 232, duration=0.5)
+sleep(1)
+# Select color scale
+pyautogui.click(811, 605, duration=0.5)
+sleep(1)
+# Delete dis
+pyautogui.click(695, 311, duration=0.5)
+pyautogui.press('delete')
+sleep(1)
+# All other values off
+pyautogui.doubleClick(503, 291, duration=0.5)
+sleep(1)
+# Remove border
+# 1
+pyautogui.doubleClick(526, 328, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 2
+pyautogui.doubleClick(529, 345, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 3
+pyautogui.doubleClick(525, 361, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 4
+pyautogui.doubleClick(530, 382, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 5
+pyautogui.doubleClick(530, 394, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 6
+pyautogui.doubleClick(521, 414, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 7
+pyautogui.doubleClick(518, 430, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 8
+pyautogui.doubleClick(518, 445, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# roll bar down
+pyautogui.click(875, 449, duration=0.5)
+sleep(1)
+# 9
+pyautogui.doubleClick(519, 448, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# roll bar up
+pyautogui.click(875, 270, duration=0.5)
+sleep(1)
+# insert legend labels
+# 1
+pyautogui.click(690, 326, duration=0.5)
+sleep(1)
+pyautogui.write(Mat_Or_1, interval=0.1)
+pyautogui.press('enter')
+sleep(1)
+# 2
+pyautogui.write(Mat_Or_2, interval=0.1)
+pyautogui.press('enter')
+sleep(1)
+# 3
+pyautogui.write(Mat_Or_3, interval=0.1)
+pyautogui.press('enter')
+sleep(1)
+# 4
+pyautogui.write(Mat_Or_4, interval=0.1)
+pyautogui.press('enter')
+sleep(1)
+# 5
+pyautogui.write(Mat_Or_5, interval=0.1)
+pyautogui.press('enter')
+sleep(1)
+# 6
+pyautogui.write(Mat_Or_6, interval=0.1)
+pyautogui.press('enter')
+sleep(1)
+# 7
+pyautogui.write(Mat_Or_7, interval=0.1)
+pyautogui.press('enter')
+sleep(1)
+# 8
+pyautogui.write(Mat_Or_8, interval=0.1)
+sleep(1)
+# roll bar down
+pyautogui.click(875, 449, duration=0.5)
+sleep(1)
+# 9
+pyautogui.click(689, 445, duration=0.5)
+sleep(1)
+pyautogui.write(Mat_Or_9, interval=0.1)
+sleep(1)
+# ok finish classify shp
+pyautogui.doubleClick(812, 612, duration=0.5)
+sleep(3)
+# Legenda
+pyautogui.doubleClick(1041, 373, duration=0.5)
+sleep(2)
+# Properties Items
+pyautogui.click(449, 141, duration=0.5)
+sleep(1)
+# materia_organica
+pyautogui.click(441, 213, duration=0.5)
+sleep(1)
+# style
+pyautogui.click(474, 558, duration=0.5)
+sleep(1)
+# label
+pyautogui.click(437, 399, duration=0.5)
+sleep(1)
+pyautogui.click(749, 559, duration=0.5)
+sleep(1)
+# Size and Position
+pyautogui.click(592, 139, duration=0.5)
+sleep(1)
+# Position_X
+pyautogui.click(494, 189, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(materia_or_Position_X)
+sleep(1)
+# Position_Y
+pyautogui.click(498, 215, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(materia_or_Position_Y)
+sleep(1)
+# Size_Width
+pyautogui.click(689, 192, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(materia_or_Size_Width)
+sleep(1)
+# Size_Height
+pyautogui.click(695, 214, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(materia_or_Size_Height)
+sleep(1)
+pyautogui.click(805, 606, duration=0.5)
+sleep(5)
+# Save
+pyautogui.hotkey('ctrl', 's')
+# Export Map
+pyautogui.click(21, 37, duration=0.5)
+sleep(1)
+pyautogui.click(74, 338, duration=0.5)
+sleep(5)
+pyautogui.write('6_Materia_Organica', interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(10)
+# remove atribute
+pyautogui.click(93, 173, button='right', duration=0.5)
+sleep(1)
+pyautogui.click(144, 201, duration=0.5)
+sleep(5)
