@@ -419,9 +419,9 @@ areia_Size_Height = "6,1905 cm"
 
 # silte
 silte_Position_X = "19,6992 cm"
-silte_Position_Y = "9,3949 cm"
-silte_Size_Width = "8,9006 cm"
-silte_Size_Height = "5,6052 cm"
+silte_Position_Y = "11,7065 cm"
+silte_Size_Width = "8,0845 cm"
+silte_Size_Height = "3,2936 cm"
 
 # materia_or
 materia_or_Position_X = "19,6992 cm"
@@ -641,36 +641,36 @@ right_click_flip_symbols_position_Y = 393
 flip_symbols_position_X = 608
 flip_symbols_position_Y = 403
 
-# Areia
+# Silte
 # On shp
 pyautogui.click(51, 173, duration=0.5)
 sleep(1)
 # Alteracao Titulo do Mapa
 pyautogui.doubleClick(title_position_X, title_position_Y, duration=0.5)
 pyautogui.press('delete')
-pyautogui.write('Areia', interval=0.1)
+pyautogui.write('Silte', interval=0.1)
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 sleep(1)
 # Alteracao Titulo Legenda
 pyautogui.doubleClick(legend_title_position_X,
                       legend_title_position_Y, duration=0.5)
 pyautogui.press('delete')
-pyautogui.write("Areia (g/dm)", interval=0.1)
-pyautogui.click(hotkey_position_X, hotkey_position_Y, duration=0.5)
+pyautogui.write("Silte (g/dm)", interval=0.1)
+pyautogui.click(565, 257, duration=0.5)
 pyautogui.hotkey('ctrl', 'alt', '3')
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 # Estatisticas
 pyautogui.doubleClick(stats_position_X, stats_position_Y, duration=0.5)
 pyautogui.press('delete')
-pyautogui.write(min_4, interval=0.1)
+pyautogui.write(min_5, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(max_4, interval=0.1)
+pyautogui.write(max_5, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(med_4, interval=0.1)
+pyautogui.write(med_5, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(total_4, interval=0.1)
+pyautogui.write(total_5, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(count_4, interval=0.1)
+pyautogui.write(count_5, interval=0.1)
 pyautogui.press('enter')
 pyautogui.click(hotkey_min_position_X, hotkey_min_position_Y, duration=0.5)
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -685,7 +685,7 @@ sleep(1)
 # Alterar Pagina
 pyautogui.doubleClick(number_page_position_X,
                       number_page_position_Y, duration=0.5)
-pyautogui.write('04', interval=0.1)
+pyautogui.write('05', interval=0.1)
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 sleep(1)
 # Classificacao shp
@@ -699,12 +699,13 @@ pyautogui.click(valueDis_position_X, valueDis_position_Y, duration=0.5)
 pyautogui.press('down')
 sleep(1)
 pyautogui.doubleClick(classes_position_X, classes_position_Y, duration=0.5)
-pyautogui.write('9')
+pyautogui.write('6')
 sleep(1)
 # Selecionar escala de cores
 pyautogui.click(color_ramp_position_X, color_ramp_position_Y, duration=0.5)
 sleep(1)
-pyautogui.click(brown_scale_position_X, brown_scale_position_Y, duration=0.5)
+pyautogui.click(blue_green_scale_position_X,
+                blue_green_scale_position_Y, duration=0.5)
 sleep(1)
 # Flip Symbols
 pyautogui.click(right_click_flip_symbols_position_X,
@@ -766,40 +767,6 @@ pyautogui.click(975, 383, duration=0.5)
 sleep(1)
 pyautogui.click(821, 575, duration=0.5)
 sleep(1)
-# 7
-pyautogui.doubleClick(516, 443, duration=0.5)
-sleep(1)
-pyautogui.click(909, 360, duration=0.5)
-sleep(1)
-pyautogui.click(975, 383, duration=0.5)
-sleep(1)
-pyautogui.click(821, 575, duration=0.5)
-sleep(1)
-pyautogui.click(908, 447, duration=0.5)
-pyautogui.click(908, 447, duration=0.5)
-# 8
-pyautogui.doubleClick(526, 428, duration=0.5)
-sleep(1)
-pyautogui.click(909, 360, duration=0.5)
-sleep(1)
-pyautogui.click(975, 383, duration=0.5)
-sleep(1)
-pyautogui.click(821, 575, duration=0.5)
-sleep(1)
-pyautogui.click(908, 447, duration=0.5)
-pyautogui.click(908, 447, duration=0.5)
-# 9
-pyautogui.doubleClick(524, 446, duration=0.5)
-sleep(1)
-pyautogui.click(909, 360, duration=0.5)
-sleep(1)
-pyautogui.click(975, 383, duration=0.5)
-sleep(1)
-pyautogui.click(821, 575, duration=0.5)
-sleep(1)
-pyautogui.click(908, 447, duration=0.5)
-pyautogui.click(908, 447, duration=0.5)
-sleep(1)
 # Inserir Labels Legenda
 pyautogui.click(909, 318, duration=0.5)
 pyautogui.click(909, 318, duration=0.5)
@@ -808,50 +775,34 @@ pyautogui.click(909, 318, duration=0.5)
 sleep(1)
 # 1
 pyautogui.click(742, 343, duration=0.5)
-pyautogui.write(Areia_1, interval=0.1)
+pyautogui.write(Silte_1, interval=0.1)
 sleep(1)
 pyautogui.press('enter')
 sleep(1)
 # 2
-pyautogui.write(Areia_2, interval=0.1)
+pyautogui.write(Silte_2, interval=0.1)
 sleep(1)
 pyautogui.press('enter')
 sleep(1)
 # 3
-pyautogui.write(Areia_3, interval=0.1)
+pyautogui.write(Silte_3, interval=0.1)
 sleep(1)
 pyautogui.press('enter')
 sleep(1)
 # 4
-pyautogui.write(Areia_4, interval=0.1)
+pyautogui.write(Silte_4, interval=0.1)
 sleep(1)
 pyautogui.press('enter')
 sleep(1)
 # 5
-pyautogui.write(Areia_5, interval=0.1)
+pyautogui.write(Silte_5, interval=0.1)
 sleep(1)
 pyautogui.press('enter')
 sleep(1)
 # 6
-pyautogui.write(Areia_6, interval=0.1)
+pyautogui.write(Silte_6, interval=0.1)
 sleep(1)
 pyautogui.press('enter')
-sleep(1)
-# 7
-pyautogui.write(Areia_7, interval=0.1)
-sleep(1)
-pyautogui.press('enter')
-sleep(1)
-# 8
-pyautogui.write(Areia_8, interval=0.1)
-sleep(1)
-pyautogui.press('enter')
-sleep(1)
-# 9
-pyautogui.write(Areia_9, interval=0.1)
-sleep(1)
-pyautogui.press('enter')
-sleep(1)
 pyautogui.click(804, 613, duration=0.5)
 sleep(5)
 # Legenda
@@ -860,7 +811,7 @@ sleep(2)
 # Properties Items
 pyautogui.click(449, 141, duration=0.5)
 sleep(1)
-# areia
+# silte
 pyautogui.click(441, 213, duration=0.5)
 sleep(1)
 # style
@@ -879,28 +830,28 @@ pyautogui.click(494, 189, duration=0.5)
 sleep(1)
 pyautogui.hotkey('ctrl', 'a')
 sleep(1)
-pyautogui.write(areia_Position_X)
+pyautogui.write(silte_Position_X)
 sleep(1)
 # Position_Y
 pyautogui.click(498, 215, duration=0.5)
 sleep(1)
 pyautogui.hotkey('ctrl', 'a')
 sleep(1)
-pyautogui.write(areia_Position_Y)
+pyautogui.write(silte_Position_Y)
 sleep(1)
 # Size_Width
 pyautogui.click(689, 192, duration=0.5)
 sleep(1)
 pyautogui.hotkey('ctrl', 'a')
 sleep(1)
-pyautogui.write(areia_Size_Width)
+pyautogui.write(silte_Size_Width)
 sleep(1)
 # Size_Height
 pyautogui.click(695, 214, duration=0.5)
 sleep(1)
 pyautogui.hotkey('ctrl', 'a')
 sleep(1)
-pyautogui.write(areia_Size_Height)
+pyautogui.write(silte_Size_Height)
 sleep(1)
 pyautogui.click(805, 606, duration=0.5)
 sleep(5)
@@ -911,7 +862,7 @@ pyautogui.click(21, 37, duration=0.5)
 sleep(1)
 pyautogui.click(74, 338, duration=0.5)
 sleep(5)
-pyautogui.write('4_Areia', interval=0.1)
+pyautogui.write('5_Silte', interval=0.1)
 sleep(1)
 pyautogui.press('enter')
 sleep(10)
