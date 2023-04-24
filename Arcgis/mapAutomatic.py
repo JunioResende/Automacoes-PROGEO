@@ -388,6 +388,22 @@ title_ok_position_Y = 533
 legend_title_position_X = 1046
 legend_title_position_Y = 284
 
+# Variaveis hotkey ³
+hotkey_position_X = 571
+hotkey_position_Y = 252
+
+hotkey_min_position_X = 643
+hotkey_min_position_Y = 256
+
+hotkey_max_position_X = 643
+hotkey_max_position_Y = 268
+
+hotkey_med_position_X = 637
+hotkey_med_position_Y = 280
+
+hotkey_total_position_X = 637
+hotkey_total_position_Y = 291
+
 # Variaveis posicao da legenda
 legend_position_X = "19,6992 cm"
 legend_position_Y = "5,484 cm"
@@ -426,6 +442,24 @@ classes_position_Y = 257
 click_classify_position_X = 670
 click_classify_position_Y = 451
 
+# Variaveis Color Ramp
+color_ramp_position_X = 711
+color_ramp_position_Y = 291
+
+# Variaveis escala
+brown_scale_position_X = 642
+brown_scale_position_Y = 408
+
+blue_green_scale_position_X = 648
+blue_green_scale_position_Y = 59
+
+# Variaveis flip symbols
+right_click_flip_symbols_position_X = 520
+right_click_flip_symbols_position_Y = 393
+
+flip_symbols_position_X = 608
+flip_symbols_position_Y = 403
+
 # Argila
 # Alteracao Titulo do Mapa
 pyautogui.doubleClick(title_position_X, title_position_Y, duration=0.5)
@@ -438,6 +472,8 @@ pyautogui.doubleClick(legend_title_position_X,
                       legend_title_position_Y, duration=0.5)
 pyautogui.press('delete')
 pyautogui.write("Argila (g/dm)", interval=0.1)
+pyautogui.click(hotkey_position_X, hotkey_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 # Estatisticas
 pyautogui.doubleClick(stats_position_X, stats_position_Y, duration=0.5)
@@ -452,6 +488,14 @@ pyautogui.write(total_3, interval=0.1)
 pyautogui.press('enter')
 pyautogui.write(count_3, interval=0.1)
 pyautogui.press('enter')
+pyautogui.click(hotkey_min_position_X, hotkey_min_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(hotkey_max_position_X, hotkey_max_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(hotkey_med_position_X, hotkey_med_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
+pyautogui.click(hotkey_total_position_X, hotkey_total_position_Y, duration=0.5)
+pyautogui.hotkey('ctrl', 'alt', '3')
 pyautogui.click(title_ok_position_X, title_ok_position_Y, duration=0.5)
 sleep(1)
 # Alterar Pagina
@@ -472,6 +516,135 @@ pyautogui.press('down')
 sleep(1)
 pyautogui.doubleClick(classes_position_X, classes_position_Y, duration=0.5)
 pyautogui.write('11')
-pyautogui.click(click_classify_position_X,
-                click_classify_position_Y, duration=0.5)
+sleep(1)
+# Selecionar escala de cores
+pyautogui.click(color_ramp_position_X, color_ramp_position_Y, duration=0.5)
+sleep(1)
+pyautogui.click(brown_scale_position_X, brown_scale_position_Y, duration=0.5)
+sleep(1)
+# Flip Symbols
+pyautogui.click(right_click_flip_symbols_position_X,
+                right_click_flip_symbols_position_Y, button='right',  duration=0.5)
+pyautogui.click(flip_symbols_position_X, flip_symbols_position_Y, duration=0.5)
+sleep(1)
+# Remove border
+# 1
+pyautogui.doubleClick(520, 343, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 2
+pyautogui.doubleClick(522, 360, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+#
+pyautogui.doubleClick(518, 377, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 4
+pyautogui.doubleClick(518, 394, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 5
+pyautogui.doubleClick(514, 411, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 6
+pyautogui.doubleClick(519, 427, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+# 7
+pyautogui.doubleClick(516, 443, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+# 8
+pyautogui.doubleClick(526, 394, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+# 9
+pyautogui.doubleClick(524, 410, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+# 10
+pyautogui.doubleClick(524, 424, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+# 11
+pyautogui.doubleClick(520, 444, duration=0.5)
+sleep(1)
+pyautogui.click(909, 360, duration=0.5)
+sleep(1)
+pyautogui.click(975, 383, duration=0.5)
+sleep(1)
+pyautogui.click(821, 575, duration=0.5)
+sleep(1)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
+pyautogui.click(908, 447, duration=0.5)
 sleep(1)
