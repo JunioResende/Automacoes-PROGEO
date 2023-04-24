@@ -405,10 +405,191 @@ hotkey_total_position_X = 637
 hotkey_total_position_Y = 291
 
 # Variaveis posicao da legenda
-legend_position_X = "19,6992 cm"
-legend_position_Y = "5,484 cm"
-legend_size_width = "5,6331 cm"
-legend_size_height = "9,5161 cm"
+# argila
+argila_Position_X = "19,6992 cm"
+argila_Position_Y = "7,8551 cm"
+argila_Size_Width = "8,9006 cm"
+argila_Size_Height = "7,1534 cm"
+
+# areia
+areia_Position_X = "19,6992 cm"
+areia_Position_Y = "8,8096 cm"
+areia_Size_Width = "8,9006 cm"
+areia_Size_Height = "6,1905 cm"
+
+# silte
+silte_Position_X = "19,6992 cm"
+silte_Position_Y = "9,3949 cm"
+silte_Size_Width = "8,9006 cm"
+silte_Size_Height = "5,6052 cm"
+
+# materia_or
+materia_or_Position_X = "19,6992 cm"
+materia_or_Position_Y = "10,6216 cm"
+materia_or_Size_Width = "8,9006 cm"
+materia_or_Size_Height = "4,3785 cm"
+
+# carb_or
+carb_or_Position_X = "19,6992 cm"
+carb_or_Position_Y = "12,114 cm"
+carb_or_Size_Width = "8,9006 cm"
+carb_or_Size_Height = "2,8861 cm"
+
+# ctc
+ctc_Position_X = "19,6992 cm"
+ctc_Position_Y = "10,3847 cm"
+ctc_Size_Width = "8,9006 cm"
+ctc_Size_Height = "4,6154 cm"
+
+# ph
+ph_Position_X = "19,6992 cm"
+ph_Position_Y = "11,9012 cm"
+ph_Size_Width = "8,9006 cm"
+ph_Size_Height = "3,0989 cm"
+
+# sat_bas
+sat_bas_Position_X = "19,6992 cm"
+sat_bas_Position_Y = "10,3055 cm"
+sat_bas_Size_Width = "8,9005 cm"
+sat_bas_Size_Height = "4,6946 cm"
+
+# ca
+ca_Position_X = "19,6992 cm"
+ca_Position_Y = "9,7606 cm"
+ca_Size_Width = "8,6809 cm"
+ca_Size_Height = "5,2395 cm"
+
+# mg
+mg_Position_X = "19,6992 cm"
+mg_Position_Y = "7,684 cm"
+mg_Size_Width = "8,6775 cm"
+mg_Size_Height = "7,2748 cm"
+
+# ca_mais_mg
+ca_mais_mg_Position_X = "19,6992 cm"
+ca_mais_mg_Position_Y = "11,9474 cm"
+ca_mais_mg_Size_Width = "8,5324 cm"
+ca_mais_mg_Size_Height = "3,0527 cm"
+
+# al
+al_Position_X = "19,6992 cm"
+al_Position_Y = "12,9983 cm"
+al_Size_Width = "7,9506 cm"
+al_Size_Height = "2,0018 cm"
+
+# hal
+hal_Position_X = "19,6992 cm"
+hal_Position_Y = "11,9485 cm"
+hal_Size_Width = "8,4465 cm"
+hal_Size_Height = "3,0516 cm"
+
+# sat_al
+sat_al_Position_X = "19,6992 cm"
+sat_al_Position_Y = "12,9952 cm"
+sat_al_Size_Width = "8,7193 cm"
+sat_al_Size_Height = "2,0049 cm"
+
+# k_ppm
+k_ppm_Position_X = "19,6992 cm"
+k_ppm_Position_Y = "5,5674 cm"
+k_ppm_Size_Width = "8,3328 cm"
+k_ppm_Size_Height = "9,4327 cm"
+
+# p_meh
+p_meh_Position_X = "19,6992 cm"
+p_meh_Position_Y = "13,1809 cm"
+p_meh_Size_Width = "8,3328 cm"
+p_meh_Size_Height = "1,8192 cm"
+
+# k
+k_Position_X = "19,6992 cm"
+k_Position_Y = "11,7568 cm"
+k_Size_Width = "7,3742 cm"
+k_Size_Height = "3,2433 cm"
+
+# s
+s_Position_X = "19,6992 cm"
+s_Position_Y = "12,7081 cm"
+s_Size_Width = "7,5701 cm"
+s_Size_Height = "2,292 cm"
+
+# b
+b_Position_X = "19,6992 cm"
+b_Position_Y = "12,7081 cm"
+b_Size_Width = "6,7675 cm"
+b_Size_Height = "2,2898 cm"
+
+# ca_ctc
+ca_ctc_Position_X = "19,6992 cm"
+ca_ctc_Position_Y = "10,8021 cm"
+ca_ctc_Size_Width = "7,55 cm"
+ca_ctc_Size_Height = "4,198 cm"
+
+# mg_ctc
+mg_ctc_Position_X = "19,6992 cm"
+mg_ctc_Position_Y = "12,6935 cm"
+mg_ctc_Size_Width = "7,55 cm"
+mg_ctc_Size_Height = "2,3066 cm"
+
+# k_ctc
+k_ctc_Position_X = "19,6992 cm"
+k_ctc_Position_Y = "12,2206 cm"
+k_ctc_Size_Width = "7,7459 cm"
+k_ctc_Size_Height = "2,7795 cm"
+
+# hal_ctc
+hal_ctc_Position_X = "19,6992 cm"
+hal_ctc_Position_Y = "12,2206 cm"
+hal_ctc_Size_Width = "7,7658 cm"
+hal_ctc_Size_Height = "2,8743 cm"
+
+# ca_mg
+ca_mg_Position_X = "19,6992 cm"
+ca_mg_Position_Y = "12,2206 cm"
+ca_mg_Size_Width = "7,2187 cm"
+ca_mg_Size_Height = "2,8743 cm"
+
+# cak
+cak_Position_X = "19,6992 cm"
+cak_Position_Y = "12,2206 cm"
+cak_Size_Width = "8,1571 cm"
+cak_Size_Height = "2,8743 cm"
+
+# mgk
+mgk_Position_X = "19,6992 cm"
+mgk_Position_Y = "11,6296 cm"
+mgk_Size_Width = "7,3744 cm"
+mgk_Size_Height = "3,3705 cm"
+
+# cu
+cu_Position_X = "19,6992 cm"
+cu_Position_Y = "13,1839 cm"
+cu_Size_Width = "6,7876 cm"
+cu_Size_Height = "1,8162 cm"
+
+# fe
+fe_Position_X = "19,6992 cm"
+fe_Position_Y = "12,6225 cm"
+fe_Size_Width = "8,3328 cm"
+fe_Size_Height = "2,3776 cm"
+
+# mn
+mn_Position_X = "19,6992 cm"
+mn_Position_Y = "13,1751 cm"
+mn_Size_Width = "7,3747 cm"
+mn_Size_Height = "1,825 cm"
+
+# zn
+zn_Position_X = "19,6992 cm"
+zn_Position_Y = "13,1751 cm"
+zn_Size_Width = "7,3747 cm"
+zn_Size_Height = "1,8814 cm"
+
+# na
+na_Position_X = "19,6992 cm"
+na_Position_Y = "11,6296 cm"
+na_Size_Width = "7,7459 cm"
+na_Size_Height = "3,3705 cm"
 
 # Variaveis posicao Estatisticas
 stats_position_X = 955
@@ -648,3 +829,117 @@ pyautogui.click(908, 447, duration=0.5)
 pyautogui.click(908, 447, duration=0.5)
 pyautogui.click(908, 447, duration=0.5)
 sleep(1)
+# Inserir Labels Legenda
+pyautogui.click(909, 318, duration=0.5)
+pyautogui.click(909, 318, duration=0.5)
+pyautogui.click(909, 318, duration=0.5)
+pyautogui.click(909, 318, duration=0.5)
+sleep(1)
+# 1
+pyautogui.click(742, 343, duration=0.5)
+pyautogui.write(Argila_1, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 2
+pyautogui.write(Argila_2, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 3
+pyautogui.write(Argila_3, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 4
+pyautogui.write(Argila_4, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 5
+pyautogui.write(Argila_5, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 6
+pyautogui.write(Argila_6, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 7
+pyautogui.write(Argila_7, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 8
+pyautogui.write(Argila_8, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 9
+pyautogui.write(Argila_9, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 10
+pyautogui.write(Argila_10, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+# 11
+pyautogui.write(Argila_11, interval=0.1)
+sleep(1)
+pyautogui.press('enter')
+sleep(1)
+pyautogui.click(804, 613, duration=0.5)
+sleep(5)
+# Legenda
+pyautogui.doubleClick(1055, 417, duration=0.5)
+sleep(2)
+# Properties Items
+pyautogui.click(449, 141, duration=0.5)
+sleep(1)
+# Argila
+pyautogui.click(441, 213, duration=0.5)
+sleep(1)
+# style
+pyautogui.click(474, 558, duration=0.5)
+sleep(1)
+# label
+pyautogui.click(437, 399, duration=0.5)
+sleep(1)
+pyautogui.click(749, 559, duration=0.5)
+sleep(1)
+# Size and Position
+pyautogui.click(592, 139, duration=0.5)
+sleep(1)
+# Position_X
+pyautogui.click(494, 189, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(legend_position_X)
+sleep(1)
+# Position_Y
+pyautogui.click(498, 215, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(legend_position_Y)
+sleep(1)
+# Size_Width
+pyautogui.click(689, 192, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(legend_size_width)
+sleep(1)
+# Size_Height
+pyautogui.click(695, 214, duration=0.5)
+sleep(1)
+pyautogui.hotkey('ctrl', 'a')
+sleep(1)
+pyautogui.write(legend_size_height)
+sleep(1)
+pyautogui.click(805, 606, duration=0.5)
+sleep(5)
