@@ -563,14 +563,14 @@ na_Position_Y = "11,6296 cm"
 na_Size_Width = "7,7459 cm"
 na_Size_Height = "3,3705 cm"
 
-# Argila
+# Materia Organica
 # Activate box
 pyautogui.click(49, 176, duration=0.5)
 sleep(1)
 # alter title
 pyautogui.doubleClick(1009, 185, duration=0.5)
 sleep(1)
-pyautogui.write('Argila', interval=0.1)
+pyautogui.write('Materia Organica', interval=0.1)
 sleep(1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
@@ -578,7 +578,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Argila (g/dm)', interval=0.1)
+pyautogui.write('Materia Organica (g/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -587,15 +587,15 @@ sleep(1)
 # alter stats
 pyautogui.doubleClick(950, 559, duration=0.5)
 sleep(1)
-pyautogui.write(min_3, interval=0.1)
+pyautogui.write(min_6, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(max_3, interval=0.1)
+pyautogui.write(max_6, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(med_3, interval=0.1)
+pyautogui.write(med_6, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(total_3, interval=0.1)
+pyautogui.write(total_6, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(count_3, interval=0.1)
+pyautogui.write(count_6, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 pyautogui.click(721, 252, duration=0.5)
@@ -611,7 +611,7 @@ pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # alter number page
 pyautogui.doubleClick(1123, 642, duration=0.5)
-pyautogui.write('03', interval=0.1)
+pyautogui.write('06', interval=0.1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # classify shp
@@ -630,22 +630,22 @@ pyautogui.press('down')
 sleep(1)
 # Classify
 pyautogui.doubleClick(806, 254, duration=0.5)
-pyautogui.write('11')
+pyautogui.write('9')
 sleep(1)
 # color ramp
 pyautogui.click(714, 297, duration=0.5)
 # select brown scale
-pyautogui.click(647, 406, duration=0.5)
-sleep(1)
+# pyautogui.click(647, 406, duration=0.5)
+# sleep(1)
 # select green blue scale
 # pyautogui.click(644, 52, duration=0.5)
 # sleep(1)
 # select red yellow green scale
-# pyautogui.click(635, 296, duration=0.5)
-# sleep(1)
+pyautogui.click(635, 296, duration=0.5)
+sleep(1)
 # flip symbols
-pyautogui.click(523, 394, button='right', duration=0.5)
-pyautogui.click(595, 403, duration=0.5)
+# pyautogui.click(523, 394, button='right', duration=0.5)
+# pyautogui.click(595, 403, duration=0.5)
 # remove border
 # 1
 pyautogui.doubleClick(521, 339, duration=0.5)
@@ -698,18 +698,6 @@ pyautogui.click(992, 387, duration=0.5)
 pyautogui.click(816, 577, duration=0.5)
 # rool page down
 pyautogui.click(901, 452, duration=0.5)
-# 10
-pyautogui.doubleClick(529, 442, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-# rool page down
-pyautogui.click(901, 452, duration=0.5)
-# 11
-pyautogui.doubleClick(529, 442, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
 sleep(1)
 # rool page down
 pyautogui.click(901, 452, duration=0.5)
@@ -739,37 +727,31 @@ pyautogui.click(906, 319, duration=0.5)
 pyautogui.click(755, 339, duration=0.5)
 sleep(1)
 # 1
-pyautogui.write(Argila_1, interval=0.1)
+pyautogui.write(Mat_Or_1, interval=0.1)
 pyautogui.press('enter')
 # 2
-pyautogui.write(Argila_2, interval=0.1)
+pyautogui.write(Mat_Or_2, interval=0.1)
 pyautogui.press('enter')
 # 3
-pyautogui.write(Argila_3, interval=0.1)
+pyautogui.write(Mat_Or_3, interval=0.1)
 pyautogui.press('enter')
 # 4
-pyautogui.write(Argila_4, interval=0.1)
+pyautogui.write(Mat_Or_4, interval=0.1)
 pyautogui.press('enter')
 # 5
-pyautogui.write(Argila_5, interval=0.1)
+pyautogui.write(Mat_Or_5, interval=0.1)
 pyautogui.press('enter')
 # 6
-pyautogui.write(Argila_6, interval=0.1)
+pyautogui.write(Mat_Or_6, interval=0.1)
 pyautogui.press('enter')
 # 7
-pyautogui.write(Argila_7, interval=0.1)
+pyautogui.write(Mat_Or_7, interval=0.1)
 pyautogui.press('enter')
 # 8
-pyautogui.write(Argila_8, interval=0.1)
+pyautogui.write(Mat_Or_8, interval=0.1)
 pyautogui.press('enter')
 # 9
-pyautogui.write(Argila_9, interval=0.1)
-pyautogui.press('enter')
-# 10
-pyautogui.write(Argila_10, interval=0.1)
-pyautogui.press('enter')
-# 11
-pyautogui.write(Argila_11, interval=0.1)
+pyautogui.write(Mat_Or_9, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 # finish ok
@@ -792,19 +774,19 @@ pyautogui.click(616, 143, duration=0.5)
 # position X
 pyautogui.click(491, 189, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(argila_Position_X, interval=0.1)
+pyautogui.write(materia_or_Position_X, interval=0.1)
 # position Y
 pyautogui.click(493, 214, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(argila_Position_Y, interval=0.1)
+pyautogui.write(materia_or_Position_Y, interval=0.1)
 # position Width
 pyautogui.click(690, 190, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(argila_Size_Width, interval=0.1)
+pyautogui.write(materia_or_Size_Width, interval=0.1)
 # position Height
 pyautogui.click(689, 217, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(argila_Size_Height, interval=0.1)
+pyautogui.write(materia_or_Size_Height, interval=0.1)
 # finish ok
 pyautogui.click(794, 598, duration=0.5)
 # export map
@@ -815,7 +797,7 @@ pyautogui.click(82, 337, duration=0.5)
 sleep(5)
 # write map name
 pyautogui.doubleClick(615, 394, duration=0.5)
-pyautogui.write('3_Argila', interval=0.1)
+pyautogui.write('6_Materia_Organica', interval=0.1)
 pyautogui.press('enter')
 sleep(15)
 # remove shp
