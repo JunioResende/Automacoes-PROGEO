@@ -385,9 +385,9 @@ argila_Size_Height = "6,2709 cm"
 
 # areia
 areia_Position_X = "19,6992 cm"
-areia_Position_Y = "8,8096 cm"
-areia_Size_Width = "8,9006 cm"
-areia_Size_Height = "6,1905 cm"
+areia_Position_Y = "10,111 cm"
+areia_Size_Width = "7,7119 cm"
+areia_Size_Height = "4,8891 cm"
 
 # silte
 silte_Position_X = "19,6992 cm"
