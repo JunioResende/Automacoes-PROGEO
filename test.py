@@ -563,14 +563,14 @@ na_Position_Y = "11,6296 cm"
 na_Size_Width = "7,7459 cm"
 na_Size_Height = "3,3705 cm"
 
-# Enxofre
+# Boro
 # Activate box
 pyautogui.click(49, 176, duration=0.5)
 sleep(1)
 # alter title
 pyautogui.doubleClick(1009, 185, duration=0.5)
 sleep(1)
-pyautogui.write('Enxofre', interval=0.1)
+pyautogui.write('Boro', interval=0.1)
 sleep(1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
@@ -578,7 +578,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Enxofre (mg/dm)', interval=0.1)
+pyautogui.write('Boro (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -587,15 +587,15 @@ sleep(1)
 # alter stats
 pyautogui.doubleClick(950, 559, duration=0.5)
 sleep(1)
-pyautogui.write(min_20, interval=0.1)
+pyautogui.write(min_21, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(max_20, interval=0.1)
+pyautogui.write(max_21, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(med_20, interval=0.1)
+pyautogui.write(med_21, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(total_20, interval=0.1)
+pyautogui.write(total_21, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(count_20, interval=0.1)
+pyautogui.write(count_21, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 pyautogui.click(721, 252, duration=0.5)
@@ -611,7 +611,7 @@ pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # alter number page
 pyautogui.doubleClick(1123, 642, duration=0.5)
-pyautogui.write('20', interval=0.1)
+pyautogui.write('21', interval=0.1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # classify shp
@@ -677,19 +677,19 @@ sleep(1)
 pyautogui.click(755, 339, duration=0.5)
 sleep(1)
 # 1
-pyautogui.write(S_1, interval=0.1)
+pyautogui.write(B_1, interval=0.1)
 pyautogui.press('enter')
 # 2
-pyautogui.write(S_2, interval=0.1)
+pyautogui.write(B_2, interval=0.1)
 pyautogui.press('enter')
 # 3
-pyautogui.write(S_3, interval=0.1)
+pyautogui.write(B_3, interval=0.1)
 pyautogui.press('enter')
 # 4
-pyautogui.write(S_4, interval=0.1)
+pyautogui.write(B_4, interval=0.1)
 pyautogui.press('enter')
 # 5
-pyautogui.write(S_5, interval=0.1)
+pyautogui.write(B_5, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 # finish ok
@@ -712,19 +712,19 @@ pyautogui.click(616, 143, duration=0.5)
 # position X
 pyautogui.click(491, 189, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(s_Position_X, interval=0.1)
+pyautogui.write(b_Position_X, interval=0.1)
 # position Y
 pyautogui.click(493, 214, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(s_Position_Y, interval=0.1)
+pyautogui.write(b_Position_Y, interval=0.1)
 # position Width
 pyautogui.click(690, 190, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(s_Size_Width, interval=0.1)
+pyautogui.write(b_Size_Width, interval=0.1)
 # position Height
 pyautogui.click(689, 217, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(s_Size_Height, interval=0.1)
+pyautogui.write(b_Size_Height, interval=0.1)
 # finish ok
 pyautogui.click(794, 598, duration=0.5)
 # export map
@@ -735,7 +735,7 @@ pyautogui.click(82, 337, duration=0.5)
 sleep(5)
 # write map name
 pyautogui.doubleClick(615, 394, duration=0.5)
-pyautogui.write('20_Enxofre', interval=0.1)
+pyautogui.write('21_Boro', interval=0.1)
 pyautogui.press('enter')
 sleep(15)
 # remove shp
