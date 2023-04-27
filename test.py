@@ -289,7 +289,7 @@ min_16 = "Minimo: 1,02 %"
 max_16 = "Maximo: 13,49 %"
 med_16 = "Medio: 4,37 %"
 total_16 = "Total: 117,91 %"
-count_17 = "Contagem: 27 "
+count_16 = "Contagem: 27 "
 min_17 = "Minimo: 23,13 mg/dm³"
 max_17 = "Maximo: 193,22 mg/dm³"
 med_17 = "Medio: 88,5 mg/dm³"
@@ -563,14 +563,14 @@ na_Position_Y = "11,6296 cm"
 na_Size_Width = "7,7459 cm"
 na_Size_Height = "3,3705 cm"
 
-# Calcio mais Magnesio
+# Saturacao por Aluminio
 # Activate box
 pyautogui.click(49, 176, duration=0.5)
 sleep(1)
 # alter title
 pyautogui.doubleClick(1009, 185, duration=0.5)
 sleep(1)
-pyautogui.write('Calcio mais Magnesio', interval=0.1)
+pyautogui.write('Saturacao por Aluminio', interval=0.1)
 sleep(1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
@@ -578,40 +578,40 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Calcio mais Magnesio (cmol/dm)', interval=0.1)
+pyautogui.write('Saturacao por Aluminio (%)', interval=0.1)
 sleep(1)
-pyautogui.press('left')
-pyautogui.hotkey('ctrl', 'alt', '3')
+# pyautogui.press('left')
+# pyautogui.hotkey('ctrl', 'alt', '3')
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # alter stats
 pyautogui.doubleClick(950, 559, duration=0.5)
 sleep(1)
-pyautogui.write(min_13, interval=0.1)
+pyautogui.write(min_16, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(max_13, interval=0.1)
+pyautogui.write(max_16, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(med_13, interval=0.1)
+pyautogui.write(med_16, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(total_13, interval=0.1)
+pyautogui.write(total_16, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(count_13, interval=0.1)
+pyautogui.write(count_16, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
-pyautogui.click(721, 252, duration=0.5)
-pyautogui.hotkey('ctrl', 'alt', '3')
-pyautogui.click(723, 270, duration=0.5)
-pyautogui.hotkey('ctrl', 'alt', '3')
-pyautogui.click(726, 285, duration=0.5)
-pyautogui.hotkey('ctrl', 'alt', '3')
-pyautogui.click(715, 297, duration=0.5)
-pyautogui.hotkey('ctrl', 'alt', '3')
-sleep(1)
+# pyautogui.click(721, 252, duration=0.5)
+# pyautogui.hotkey('ctrl', 'alt', '3')
+# pyautogui.click(723, 270, duration=0.5)
+# pyautogui.hotkey('ctrl', 'alt', '3')
+# pyautogui.click(726, 285, duration=0.5)
+# pyautogui.hotkey('ctrl', 'alt', '3')
+# pyautogui.click(715, 297, duration=0.5)
+# pyautogui.hotkey('ctrl', 'alt', '3')
+# sleep(1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # alter number page
 pyautogui.doubleClick(1123, 642, duration=0.5)
-pyautogui.write('13', interval=0.1)
+pyautogui.write('16', interval=0.1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # classify shp
@@ -630,7 +630,7 @@ pyautogui.press('down')
 sleep(1)
 # Classify
 pyautogui.doubleClick(806, 254, duration=0.5)
-pyautogui.write('6')
+pyautogui.write('4')
 sleep(1)
 # color ramp
 pyautogui.click(714, 297, duration=0.5)
@@ -644,8 +644,8 @@ pyautogui.click(714, 297, duration=0.5)
 pyautogui.click(635, 296, duration=0.5)
 sleep(1)
 # flip symbols
-# pyautogui.click(523, 394, button='right', duration=0.5)
-# pyautogui.click(595, 403, duration=0.5)
+pyautogui.click(523, 394, button='right', duration=0.5)
+pyautogui.click(595, 403, duration=0.5)
 # remove border
 # 1
 pyautogui.doubleClick(521, 339, duration=0.5)
@@ -667,37 +667,21 @@ pyautogui.doubleClick(528, 392, duration=0.5)
 pyautogui.click(907, 364, duration=0.5)
 pyautogui.click(992, 387, duration=0.5)
 pyautogui.click(816, 577, duration=0.5)
-# 5
-pyautogui.doubleClick(525, 407, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-# 6
-pyautogui.doubleClick(533, 425, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
 sleep(1)
 # insert labels legend
 pyautogui.click(755, 339, duration=0.5)
 sleep(1)
 # 1
-pyautogui.write(Ca_mais_Mg_1, interval=0.1)
+pyautogui.write(Sat_Al_1, interval=0.1)
 pyautogui.press('enter')
 # 2
-pyautogui.write(Ca_mais_Mg_2, interval=0.1)
+pyautogui.write(Sat_Al_2, interval=0.1)
 pyautogui.press('enter')
 # 3
-pyautogui.write(Ca_mais_Mg_3, interval=0.1)
+pyautogui.write(Sat_Al_3, interval=0.1)
 pyautogui.press('enter')
 # 4
-pyautogui.write(Ca_mais_Mg_4, interval=0.1)
-pyautogui.press('enter')
-# 5
-pyautogui.write(Ca_mais_Mg_5, interval=0.1)
-pyautogui.press('enter')
-# 6
-pyautogui.write(Ca_mais_Mg_6, interval=0.1)
+pyautogui.write(Sat_Al_4, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 # finish ok
@@ -705,7 +689,7 @@ pyautogui.click(810, 618, duration=0.5)
 sleep(3)
 # Legend
 # Select Legend
-pyautogui.doubleClick(1016, 351, duration=0.5)
+pyautogui.doubleClick(1066, 254, duration=0.5)
 sleep(2)
 # items
 pyautogui.click(444, 140, duration=0.5)
@@ -720,19 +704,19 @@ pyautogui.click(616, 143, duration=0.5)
 # position X
 pyautogui.click(491, 189, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(ca_mais_mg_Position_X, interval=0.1)
+pyautogui.write(sat_al_Position_X, interval=0.1)
 # position Y
 pyautogui.click(493, 214, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(ca_mais_mg_Position_Y, interval=0.1)
+pyautogui.write(sat_al_Position_Y, interval=0.1)
 # position Width
 pyautogui.click(690, 190, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(ca_mais_mg_Size_Width, interval=0.1)
+pyautogui.write(sat_al_Size_Width, interval=0.1)
 # position Height
 pyautogui.click(689, 217, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(ca_mais_mg_Size_Height, interval=0.1)
+pyautogui.write(sat_al_Size_Height, interval=0.1)
 # finish ok
 pyautogui.click(794, 598, duration=0.5)
 # export map
@@ -743,7 +727,7 @@ pyautogui.click(82, 337, duration=0.5)
 sleep(5)
 # write map name
 pyautogui.doubleClick(615, 394, duration=0.5)
-pyautogui.write('13_Calcio_mais_Magnesio', interval=0.1)
+pyautogui.write('16_Saturacao_por_Aluminio', interval=0.1)
 pyautogui.press('enter')
 sleep(15)
 # remove shp
