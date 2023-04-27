@@ -563,22 +563,23 @@ na_Position_Y = "11,6296 cm"
 na_Size_Width = "7,7459 cm"
 na_Size_Height = "3,3705 cm"
 
-# Potassio CTC
+# Hidrogenio mais Aluminio CTC
 # Activate box
 pyautogui.click(49, 176, duration=0.5)
 sleep(1)
 # alter title
 pyautogui.doubleClick(1009, 185, duration=0.5)
 sleep(1)
-pyautogui.write('Potassio CTC', interval=0.1)
+pyautogui.write('Hidrogenio mais Aluminio CTC', interval=0.1)
 sleep(1)
 pyautogui.click(665, 538, duration=0.5)
+pyautogui.press('right')
 sleep(1)
 
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Potassio CTC (%)', interval=0.1)
+pyautogui.write('Hidrogenio mais Aluminio CTC (%)', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -587,15 +588,15 @@ sleep(1)
 # alter stats
 pyautogui.doubleClick(950, 559, duration=0.5)
 sleep(1)
-pyautogui.write(min_24, interval=0.1)
+pyautogui.write(min_25, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(max_24, interval=0.1)
+pyautogui.write(max_25, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(med_24, interval=0.1)
+pyautogui.write(med_25, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(total_24, interval=0.1)
+pyautogui.write(total_25, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(count_24, interval=0.1)
+pyautogui.write(count_25, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 # pyautogui.click(721, 252, duration=0.5)
@@ -611,7 +612,7 @@ pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # alter number page
 pyautogui.doubleClick(1123, 642, duration=0.5)
-pyautogui.write('24', interval=0.1)
+pyautogui.write('25', interval=0.1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # classify shp
@@ -644,8 +645,8 @@ pyautogui.click(714, 297, duration=0.5)
 pyautogui.click(635, 296, duration=0.5)
 sleep(1)
 # flip symbols
-# pyautogui.click(523, 394, button='right', duration=0.5)
-# pyautogui.click(595, 403, duration=0.5)
+pyautogui.click(523, 394, button='right', duration=0.5)
+pyautogui.click(595, 403, duration=0.5)
 # remove border
 # 1
 pyautogui.doubleClick(521, 339, duration=0.5)
@@ -682,25 +683,25 @@ sleep(1)
 pyautogui.click(755, 339, duration=0.5)
 sleep(1)
 # 1
-pyautogui.write(K_CTC_1, interval=0.1)
+pyautogui.write(HAL_CTC_1, interval=0.1)
 pyautogui.press('enter')
 # 2
-pyautogui.write(K_CTC_2, interval=0.1)
+pyautogui.write(HAL_CTC_2, interval=0.1)
 pyautogui.press('enter')
 # 3
-pyautogui.write(K_CTC_3, interval=0.1)
+pyautogui.write(HAL_CTC_3, interval=0.1)
 pyautogui.press('enter')
 # 4
-pyautogui.write(K_CTC_4, interval=0.1)
+pyautogui.write(HAL_CTC_4, interval=0.1)
 pyautogui.press('enter')
 # 5
-pyautogui.write(K_CTC_5, interval=0.1)
+pyautogui.write(HAL_CTC_5, interval=0.1)
 pyautogui.press('enter')
 # 5
-pyautogui.write(K_CTC_5, interval=0.1)
+pyautogui.write(HAL_CTC_5, interval=0.1)
 pyautogui.press('enter')
 # 6
-pyautogui.write(K_CTC_6, interval=0.1)
+pyautogui.write(HAL_CTC_6, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 # finish ok
@@ -723,19 +724,19 @@ pyautogui.click(616, 143, duration=0.5)
 # position X
 pyautogui.click(491, 189, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(k_ctc_Position_X, interval=0.1)
+pyautogui.write(hal_ctc_Position_X, interval=0.1)
 # position Y
 pyautogui.click(493, 214, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(k_ctc_Position_Y, interval=0.1)
+pyautogui.write(hal_ctc_Position_Y, interval=0.1)
 # position Width
 pyautogui.click(690, 190, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(k_ctc_Size_Width, interval=0.1)
+pyautogui.write(hal_ctc_Size_Width, interval=0.1)
 # position Height
 pyautogui.click(689, 217, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(k_ctc_Size_Height, interval=0.1)
+pyautogui.write(hal_ctc_Size_Height, interval=0.1)
 # finish ok
 pyautogui.click(794, 598, duration=0.5)
 # export map
@@ -746,7 +747,7 @@ pyautogui.click(82, 337, duration=0.5)
 sleep(5)
 # write map name
 pyautogui.doubleClick(615, 394, duration=0.5)
-pyautogui.write('24_Potassio_CTC', interval=0.1)
+pyautogui.write('25_Hidrogenio_+_Aluminio_CTC', interval=0.1)
 pyautogui.press('enter')
 sleep(15)
 # remove shp
