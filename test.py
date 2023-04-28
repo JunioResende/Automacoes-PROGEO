@@ -563,14 +563,14 @@ na_Position_Y = "11,6296 cm"
 na_Size_Width = "7,7459 cm"
 na_Size_Height = "3,3705 cm"
 
-# Manganes
+# Zinco
 # Activate box
 pyautogui.click(49, 176, duration=0.5)
 sleep(1)
 # alter title
 pyautogui.doubleClick(1009, 185, duration=0.5)
 sleep(1)
-pyautogui.write('Manganes ', interval=0.1)
+pyautogui.write('Zinco ', interval=0.1)
 sleep(1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
@@ -578,7 +578,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Manganes (mg/dm)', interval=0.1)
+pyautogui.write('Zinco (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -587,15 +587,15 @@ sleep(1)
 # alter stats
 pyautogui.doubleClick(950, 559, duration=0.5)
 sleep(1)
-pyautogui.write(min_31, interval=0.1)
+pyautogui.write(min_32, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(max_31, interval=0.1)
+pyautogui.write(max_32, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(med_31, interval=0.1)
+pyautogui.write(med_32, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(total_31, interval=0.1)
+pyautogui.write(total_32, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(count_31, interval=0.1)
+pyautogui.write(count_32, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 pyautogui.click(721, 252, duration=0.5)
@@ -611,7 +611,7 @@ pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # alter number page
 pyautogui.doubleClick(1123, 642, duration=0.5)
-pyautogui.write('31', interval=0.1)
+pyautogui.write('32', interval=0.1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # classify shp
@@ -672,16 +672,16 @@ sleep(1)
 pyautogui.click(755, 339, duration=0.5)
 sleep(1)
 # 1
-pyautogui.write(Mn_1, interval=0.1)
+pyautogui.write(Zn_1, interval=0.1)
 pyautogui.press('enter')
 # 2
-pyautogui.write(Mn_2, interval=0.1)
+pyautogui.write(Zn_2, interval=0.1)
 pyautogui.press('enter')
 # 3
-pyautogui.write(Mn_3, interval=0.1)
+pyautogui.write(Zn_3, interval=0.1)
 pyautogui.press('enter')
 # 4
-pyautogui.write(Mn_4, interval=0.1)
+pyautogui.write(Zn_4, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 # finish ok
@@ -704,19 +704,19 @@ pyautogui.click(616, 143, duration=0.5)
 # position X
 pyautogui.click(491, 189, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(mn_Position_X, interval=0.1)
+pyautogui.write(zn_Position_X, interval=0.1)
 # position Y
 pyautogui.click(493, 214, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(mn_Position_Y, interval=0.1)
+pyautogui.write(zn_Position_Y, interval=0.1)
 # position Width
 pyautogui.click(690, 190, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(mn_Size_Width, interval=0.1)
+pyautogui.write(zn_Size_Width, interval=0.1)
 # position Height
 pyautogui.click(689, 217, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(mn_Size_Height, interval=0.1)
+pyautogui.write(zn_Size_Height, interval=0.1)
 # finish ok
 pyautogui.click(794, 598, duration=0.5)
 # export map
@@ -727,7 +727,7 @@ pyautogui.click(82, 337, duration=0.5)
 sleep(5)
 # write map name
 pyautogui.doubleClick(615, 394, duration=0.5)
-pyautogui.write('31_Manganes', interval=0.1)
+pyautogui.write('32_Zinco', interval=0.1)
 pyautogui.press('enter')
 sleep(15)
 # remove shp
