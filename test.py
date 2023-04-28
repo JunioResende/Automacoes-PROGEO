@@ -563,14 +563,14 @@ na_Position_Y = "11,6296 cm"
 na_Size_Width = "7,7459 cm"
 na_Size_Height = "3,3705 cm"
 
-# Zinco
+# Sodio
 # Activate box
 pyautogui.click(49, 176, duration=0.5)
 sleep(1)
 # alter title
 pyautogui.doubleClick(1009, 185, duration=0.5)
 sleep(1)
-pyautogui.write('Zinco ', interval=0.1)
+pyautogui.write('Sodio', interval=0.1)
 sleep(1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
@@ -578,7 +578,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Zinco (mg/dm)', interval=0.1)
+pyautogui.write('Sodio (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -587,15 +587,15 @@ sleep(1)
 # alter stats
 pyautogui.doubleClick(950, 559, duration=0.5)
 sleep(1)
-pyautogui.write(min_32, interval=0.1)
+pyautogui.write(min_33, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(max_32, interval=0.1)
+pyautogui.write(max_33, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(med_32, interval=0.1)
+pyautogui.write(med_33, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(total_32, interval=0.1)
+pyautogui.write(total_33, interval=0.1)
 pyautogui.press('enter')
-pyautogui.write(count_32, interval=0.1)
+pyautogui.write(count_33, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 pyautogui.click(721, 252, duration=0.5)
@@ -611,7 +611,7 @@ pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # alter number page
 pyautogui.doubleClick(1123, 642, duration=0.5)
-pyautogui.write('32', interval=0.1)
+pyautogui.write('33', interval=0.1)
 pyautogui.click(665, 538, duration=0.5)
 sleep(1)
 # classify shp
@@ -630,7 +630,7 @@ pyautogui.press('down')
 sleep(1)
 # Classify
 pyautogui.doubleClick(806, 254, duration=0.5)
-pyautogui.write('4')
+pyautogui.write('7')
 sleep(1)
 # color ramp
 pyautogui.click(714, 297, duration=0.5)
@@ -667,21 +667,47 @@ pyautogui.doubleClick(528, 392, duration=0.5)
 pyautogui.click(907, 364, duration=0.5)
 pyautogui.click(992, 387, duration=0.5)
 pyautogui.click(816, 577, duration=0.5)
+# 5
+pyautogui.doubleClick(525, 407, duration=0.5)
+pyautogui.click(907, 364, duration=0.5)
+pyautogui.click(992, 387, duration=0.5)
+pyautogui.click(816, 577, duration=0.5)
+# 6
+pyautogui.doubleClick(533, 425, duration=0.5)
+pyautogui.click(907, 364, duration=0.5)
+pyautogui.click(992, 387, duration=0.5)
+pyautogui.click(816, 577, duration=0.5)
+# 7
+pyautogui.doubleClick(529, 442, duration=0.5)
+pyautogui.click(907, 364, duration=0.5)
+pyautogui.click(992, 387, duration=0.5)
+pyautogui.click(816, 577, duration=0.5)
+# rool page down
+pyautogui.click(901, 452, duration=0.5)
 sleep(1)
 # insert labels legend
 pyautogui.click(755, 339, duration=0.5)
 sleep(1)
 # 1
-pyautogui.write(Zn_1, interval=0.1)
+pyautogui.write(Na_1, interval=0.1)
 pyautogui.press('enter')
 # 2
-pyautogui.write(Zn_2, interval=0.1)
+pyautogui.write(Na_2, interval=0.1)
 pyautogui.press('enter')
 # 3
-pyautogui.write(Zn_3, interval=0.1)
+pyautogui.write(Na_3, interval=0.1)
 pyautogui.press('enter')
 # 4
-pyautogui.write(Zn_4, interval=0.1)
+pyautogui.write(Na_4, interval=0.1)
+pyautogui.press('enter')
+# 5
+pyautogui.write(Na_5, interval=0.1)
+pyautogui.press('enter')
+# 6
+pyautogui.write(Na_6, interval=0.1)
+pyautogui.press('enter')
+# 7
+pyautogui.write(Na_7, interval=0.1)
 pyautogui.press('enter')
 sleep(1)
 # finish ok
@@ -704,19 +730,19 @@ pyautogui.click(616, 143, duration=0.5)
 # position X
 pyautogui.click(491, 189, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(zn_Position_X, interval=0.1)
+pyautogui.write(na_Position_X, interval=0.1)
 # position Y
 pyautogui.click(493, 214, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(zn_Position_Y, interval=0.1)
+pyautogui.write(na_Position_Y, interval=0.1)
 # position Width
 pyautogui.click(690, 190, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(zn_Size_Width, interval=0.1)
+pyautogui.write(na_Size_Width, interval=0.1)
 # position Height
 pyautogui.click(689, 217, duration=0.5)
 pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(zn_Size_Height, interval=0.1)
+pyautogui.write(na_Size_Height, interval=0.1)
 # finish ok
 pyautogui.click(794, 598, duration=0.5)
 # export map
@@ -727,7 +753,7 @@ pyautogui.click(82, 337, duration=0.5)
 sleep(5)
 # write map name
 pyautogui.doubleClick(615, 394, duration=0.5)
-pyautogui.write('32_Zinco', interval=0.1)
+pyautogui.write('33_Sodio', interval=0.1)
 pyautogui.press('enter')
 sleep(15)
 # remove shp
