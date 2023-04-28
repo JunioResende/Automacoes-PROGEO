@@ -5237,7 +5237,7 @@ pyautogui.press('down')
 sleep(1)
 # Classify
 pyautogui.doubleClick(806, 254, duration=0.5)
-pyautogui.write('6')
+pyautogui.write('9')
 sleep(1)
 # color ramp
 pyautogui.click(714, 297, duration=0.5)
@@ -5303,9 +5303,6 @@ pyautogui.press('enter')
 # 5
 pyautogui.write(K_CTC_5, interval=0.1)
 pyautogui.press('enter')
-# 5
-pyautogui.write(K_CTC_5, interval=0.1)
-pyautogui.press('enter')
 # 6
 pyautogui.write(K_CTC_6, interval=0.1)
 pyautogui.press('enter')
@@ -5315,7 +5312,7 @@ pyautogui.click(810, 618, duration=0.5)
 sleep(3)
 # Legend
 # Select Legend
-pyautogui.doubleClick(1057, 279, duration=0.5)
+pyautogui.doubleClick(1000, 234, duration=0.5)
 sleep(2)
 # items
 pyautogui.click(444, 140, duration=0.5)
@@ -5354,200 +5351,6 @@ sleep(5)
 # write map name
 pyautogui.doubleClick(615, 394, duration=0.5)
 pyautogui.write('24_Potassio_CTC', interval=0.1)
-pyautogui.press('enter')
-sleep(15)
-# remove shp
-pyautogui.click(89, 172, button='right', duration=0.5)
-sleep(1)
-pyautogui.click(134, 205, duration=0.5)
-sleep(10)
-
-
-# Hidrogenio mais Aluminio CTC
-# Activate box
-pyautogui.click(49, 176, duration=0.5)
-sleep(1)
-# alter title
-pyautogui.doubleClick(1009, 185, duration=0.5)
-sleep(1)
-pyautogui.write('Hidrogenio mais Aluminio CTC', interval=0.1)
-sleep(1)
-pyautogui.click(665, 538, duration=0.5)
-pyautogui.press('right')
-sleep(1)
-
-# alter legend title
-pyautogui.doubleClick(1007, 287, duration=0.5)
-sleep(1)
-pyautogui.write('Hidrogenio mais Aluminio CTC (%)', interval=0.1)
-sleep(1)
-# pyautogui.press('left')
-# pyautogui.hotkey('ctrl', 'alt', '3')
-pyautogui.click(665, 538, duration=0.5)
-sleep(1)
-# alter stats
-pyautogui.doubleClick(950, 559, duration=0.5)
-sleep(1)
-pyautogui.write(min_25, interval=0.1)
-pyautogui.press('enter')
-pyautogui.write(max_25, interval=0.1)
-pyautogui.press('enter')
-pyautogui.write(med_25, interval=0.1)
-pyautogui.press('enter')
-pyautogui.write(total_25, interval=0.1)
-pyautogui.press('enter')
-pyautogui.write(count_25, interval=0.1)
-pyautogui.press('enter')
-sleep(1)
-# pyautogui.click(721, 252, duration=0.5)
-# pyautogui.hotkey('ctrl', 'alt', '3')
-# pyautogui.click(723, 270, duration=0.5)
-# pyautogui.hotkey('ctrl', 'alt', '3')
-# pyautogui.click(726, 285, duration=0.5)
-# pyautogui.hotkey('ctrl', 'alt', '3')
-# pyautogui.click(715, 297, duration=0.5)
-# pyautogui.hotkey('ctrl', 'alt', '3')
-# sleep(1)
-pyautogui.click(665, 538, duration=0.5)
-sleep(1)
-# alter number page
-pyautogui.doubleClick(1123, 642, duration=0.5)
-pyautogui.write('25', interval=0.1)
-pyautogui.click(665, 538, duration=0.5)
-sleep(1)
-# classify shp
-pyautogui.doubleClick(88, 174, duration=0.5)
-sleep(1)
-# Symbology
-pyautogui.click(584, 126, duration=0.5)
-sleep(1)
-# Quanties
-pyautogui.click(384, 246, duration=0.5)
-sleep(1)
-# Select dis
-pyautogui.click(710, 232, duration=0.5)
-sleep(1)
-pyautogui.press('down')
-sleep(1)
-# Classify
-pyautogui.doubleClick(806, 254, duration=0.5)
-pyautogui.write('6')
-sleep(1)
-# color ramp
-pyautogui.click(714, 297, duration=0.5)
-# select brown scale
-# pyautogui.click(647, 406, duration=0.5)
-# sleep(1)
-# select green blue scale
-# pyautogui.click(644, 52, duration=0.5)
-# sleep(1)
-# select red yellow green scale
-pyautogui.click(635, 296, duration=0.5)
-sleep(1)
-# flip symbols
-pyautogui.click(523, 394, button='right', duration=0.5)
-pyautogui.click(595, 403, duration=0.5)
-# remove border
-# 1
-pyautogui.doubleClick(521, 339, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-# 2
-pyautogui.doubleClick(524, 357, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-# 3
-pyautogui.doubleClick(527, 374, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-# 4
-pyautogui.doubleClick(528, 392, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-# 5
-pyautogui.doubleClick(525, 407, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-# 6
-pyautogui.doubleClick(533, 425, duration=0.5)
-pyautogui.click(907, 364, duration=0.5)
-pyautogui.click(992, 387, duration=0.5)
-pyautogui.click(816, 577, duration=0.5)
-sleep(1)
-# insert labels legend
-pyautogui.click(755, 339, duration=0.5)
-sleep(1)
-# 1
-pyautogui.write(HAL_CTC_1, interval=0.1)
-pyautogui.press('enter')
-# 2
-pyautogui.write(HAL_CTC_2, interval=0.1)
-pyautogui.press('enter')
-# 3
-pyautogui.write(HAL_CTC_3, interval=0.1)
-pyautogui.press('enter')
-# 4
-pyautogui.write(HAL_CTC_4, interval=0.1)
-pyautogui.press('enter')
-# 5
-pyautogui.write(HAL_CTC_5, interval=0.1)
-pyautogui.press('enter')
-# 5
-pyautogui.write(HAL_CTC_5, interval=0.1)
-pyautogui.press('enter')
-# 6
-pyautogui.write(HAL_CTC_6, interval=0.1)
-pyautogui.press('enter')
-sleep(1)
-# finish ok
-pyautogui.click(810, 618, duration=0.5)
-sleep(3)
-# Legend
-# Select Legend
-pyautogui.doubleClick(1057, 279, duration=0.5)
-sleep(2)
-# items
-pyautogui.click(444, 140, duration=0.5)
-pyautogui.click(431, 215, duration=0.5)
-# style
-pyautogui.click(470, 562, duration=0.5)
-pyautogui.click(442, 403, duration=0.5)
-# ok
-pyautogui.click(732, 553, duration=0.5)
-# size and position
-pyautogui.click(616, 143, duration=0.5)
-# position X
-pyautogui.click(491, 189, duration=0.5)
-pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(hal_ctc_Position_X, interval=0.1)
-# position Y
-pyautogui.click(493, 214, duration=0.5)
-pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(hal_ctc_Position_Y, interval=0.1)
-# position Width
-pyautogui.click(690, 190, duration=0.5)
-pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(hal_ctc_Size_Width, interval=0.1)
-# position Height
-pyautogui.click(689, 217, duration=0.5)
-pyautogui.hotkey('ctrl', 'a')
-pyautogui.write(hal_ctc_Size_Height, interval=0.1)
-# finish ok
-pyautogui.click(794, 598, duration=0.5)
-# export map
-# file
-pyautogui.click(20, 35, duration=0.5)
-# export map
-pyautogui.click(82, 337, duration=0.5)
-sleep(5)
-# write map name
-pyautogui.doubleClick(615, 394, duration=0.5)
-pyautogui.write('25_Hidrogenio_+_Aluminio_CTC', interval=0.1)
 pyautogui.press('enter')
 sleep(15)
 # remove shp
