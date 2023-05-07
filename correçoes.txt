@@ -1,0 +1,31 @@
+Argila
+Areia
+Silte
+Matéria Orgânica
+Carbono Orgânico
+CTC Total
+pH Cloreto de Cálcio
+Saturação de Bases
+Cálcio
+Magnésio
+Cálcio mais Magnésio
+Alumínio
+Hidrogênio mais Alumínio
+Saturação por Alumínio
+Potássio ppm
+Fósforo
+Potássio
+Enxofre
+Boro
+Cálcio CTC
+Magnésio CTC
+Potássio CTC
+Hidrogênio mais Alumínio CTC
+Relação Cálcio Magnésio
+Relação Cálcio Potássio
+Relação Magnésio Potássio
+Cobre
+Ferro
+Manganês
+Zinco
+Sódio

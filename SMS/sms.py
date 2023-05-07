@@ -22,7 +22,7 @@ export_format_coordinate_X = 518
 export_format_coordinate_Y = 600
 
 # Tempo de execução do atributo
-execution_atribute_time = 45
+execution_atribute_time = 180
 
 # 10_Saturacao_de_Bases
 pyautogui.click(select_atribute_coordinate_X,
