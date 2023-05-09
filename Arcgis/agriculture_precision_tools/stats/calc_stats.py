@@ -8,7 +8,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\3_Argila.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\3_Argila.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -30,7 +34,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\4_Areia.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\4_Areia.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -52,7 +60,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\5_Silte.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\5_Silte.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -74,7 +86,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\6_Materia_Organica.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\6_Materia_Organica.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -96,7 +112,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\7_Carbono_Organico.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\7_Carbono_Organico.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -118,7 +138,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\8_CTC_Total.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\8_CTC_Total.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -140,7 +164,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\9_pH_Cloreto_de_Calcio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\9_pH_Cloreto_de_Calcio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -162,7 +190,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\10_Saturacao_de_Bases.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\10_Saturacao_de_Bases.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -184,7 +216,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\11_Calcio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\11_Calcio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -206,7 +242,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\12_Magnesio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\12_Magnesio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -228,7 +268,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\13_Calcio_Mais_Magnesio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\13_Calcio_Mais_Magnesio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -250,7 +294,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\14_Aluminio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\14_Aluminio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -272,7 +320,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\15_Hidrogenio_Mais_Aluminio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\15_Hidrogenio_Mais_Aluminio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -294,7 +346,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\16_Saturacao_por_Aluminio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\16_Saturacao_por_Aluminio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -316,7 +372,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\17_Potassio_ppm.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\17_Potassio_ppm.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -338,7 +398,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\18_Fosforo_Mehlich.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\18_Fosforo_Mehlich.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -360,7 +424,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\19_Potassio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\19_Potassio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -382,7 +450,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\20_Enxofre.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\20_Enxofre.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -404,7 +476,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\21_Boro.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\21_Boro.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -426,7 +502,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\22_Calcio_CTC.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\22_Calcio_CTC.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -448,7 +528,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\23_Magnesio_CTC.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\23_Magnesio_CTC.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -470,7 +554,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\24_Potassio_CTC.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\24_Potassio_CTC.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -492,7 +580,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\25_Hidrogenio_Mais_Aluminio_CTC.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\25_Hidrogenio_Mais_Aluminio_CTC.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -514,7 +606,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\26_Relacao_Calcio_Magnesio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\26_Relacao_Calcio_Magnesio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -536,7 +632,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\27_Relacao_Calcio_Potassio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\27_Relacao_Calcio_Potassio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -558,7 +658,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\28_Relacao_Magnesio_Potassio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\28_Relacao_Magnesio_Potassio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -580,7 +684,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\29_Cobre.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\29_Cobre.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -602,7 +710,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\30_Ferro.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\30_Ferro.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -624,7 +736,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\31_Manganes.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\31_Manganes.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -646,7 +762,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\32_Zinco.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\32_Zinco.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
@@ -668,7 +788,11 @@ if Entrada == '#' or not Entrada:
 Field_Added = Entrada
 Selected = Field_Added
 Field_Calculated = Selected
+<<<<<<< HEAD
 Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Marcos Nogueira\\2023\\Fazenda Limoeiro 1\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\33_Sodio.shp"
+=======
+Saida = "G:\\Meu Drive\\Projetos Geo\\Progeo\\Projetos PROGEO\\Márcio Farias de Resende\\2023\\Fazenda Paraiso\\Processado\\Shapefiles\\2- Calc Stats\\2-Dis_Fields\\33_Sodio.shp"
+>>>>>>> refs/remotes/origin/main
 
 arcpy.AddField_management(Entrada, "dis", "SHORT", "3",
                           "", "", "", "NULLABLE", "NON_REQUIRED", "")
