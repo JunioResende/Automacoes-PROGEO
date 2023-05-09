@@ -2,379 +2,380 @@ import pyautogui
 from time import sleep
 
 # Variaveis legendas e estatisticas
-Argila_1 = "Acima de 600,00 -- (0ha - 0%)"
-Argila_2 = "500,00 - 600,00 -- (10,56ha - 2,43%)"
-Argila_3 = "450,00 - 500,00 -- (30,49ha - 7,03%)"
-Argila_4 = "400,00 - 450,00 -- (69,22ha - 15,96%)"
-Argila_5 = "350,00 - 400,00 -- (109,22ha - 25,18%)"
-Argila_6 = "300,00 - 350,00 -- (87,24ha - 20,11%)"
-Argila_7 = "250,00 - 300,00 -- (106,17ha - 24,47%)"
-Argila_8 = "220,00 - 250,00 -- (13,36ha - 3,08%)"
-Argila_9 = "180,00 - 220,00 -- (5,37ha - 1,24%)"
-Argila_10 = "120,00 - 180,00 -- (2,15ha - 0,5%)"
-Argila_11 = "Abaixo de 120,00 -- (0ha - 0%)"
-Areia_1 = "Acima de 800,00 -- (0ha - 0%)"
-Areia_2 = "700,00 - 800,00 -- (20,95ha - 4,83%)"
-Areia_3 = "600,00 - 700,00 -- (193,53ha - 44,61%)"
-Areia_4 = "550,00 - 600,00 -- (109,32ha - 25,2%)"
-Areia_5 = "500,00 - 550,00 -- (69ha - 15,91%)"
-Areia_6 = "450,00 - 500,00 -- (30,47ha - 7,02%)"
-Areia_7 = "400,00 - 450,00 -- (10,52ha - 2,43%)"
-Areia_8 = "350,00 - 400,00 -- (0ha - 0%)"
-Areia_9 = "Abaixo de 350,00 -- (0ha - 0%)"
-Silte_1 = "Acima de 250,00 -- (0ha - 0%)"
-Silte_2 = "200,00 - 250,00  -- (0ha - 0%)"
-Silte_3 = "150,00 - 200,00 -- (0ha - 0%)"
-Silte_4 = "100,00 - 150,00 -- (0ha - 0%)"
-Silte_5 = "50,00 - 100,00 -- (433,79ha - 100%)"
-Silte_6 = "Abaixo de 50,00 -- (0ha - 0%)"
-Mat_Or_1 = "Acima de 38,00 -- Alto  (0ha - 0%)"
-Mat_Or_2 = "35,00 - 38,00 -- Medio Alto  (0ha - 0%)"
-Mat_Or_3 = "33,00 - 35,00 -- Medio  (9,22ha - 2,13%)"
-Mat_Or_4 = "28,00 - 33,00 -- Medio  (99,91ha - 23,03%)"
-Mat_Or_5 = "25,00 - 28,00 -- Medio Baixo  (131,31ha - 30,27%)"
-Mat_Or_6 = "22,00 - 25,00 -- Baixo  (153,67ha - 35,42%)"
-Mat_Or_7 = "20,00 - 22,00 -- Baixo  (35,53ha - 8,19%)"
-Mat_Or_8 = "17,00 - 20,00 -- Muito Baixo  (4,15ha - 0,96%)"
-Mat_Or_9 = "Abaixo de 17,00 -- Muito Baixo  (0ha - 0%)"
-Carb_Or_1 = "Acima de 20,00 -- Muito Alto  (0,55ha - 0,13%)"
-Carb_Or_2 = "18,00 - 20,00 -- Alto  (28,12ha - 6,48%)"
-Carb_Or_3 = "16,00 - 18,00 -- Medio Alto  (92,19ha - 21,25%)"
-Carb_Or_4 = "14,00 - 16,00 -- Medio  (177,23ha - 40,86%)"
-Carb_Or_5 = "12,00 - 14,00 -- Baixo  (123,03ha - 28,36%)"
-Carb_Or_6 = "Abaixo de 12,00 -- Muito Baixo  (12,67ha - 2,92%)"
-CTC_1 = "Acima de 9,00 -- Muito Bom  (80ha - 18,44%)"
-CTC_2 = "8,00 - 9,00 -- Muito Bom  (175,71ha - 40,51%)"
-CTC_3 = "7,00 - 8,00 -- Bom  (144,83ha - 33,39%)"
-CTC_4 = "6,00 - 7,00 --Bom  (33,25ha - 7,66%)"
-CTC_5 = "5,00 - 6,00 -- Medio  (0ha - 0%)"
-CTC_6 = "4,00 - 5,00 -- Baixo  (0ha - 0%)"
-CTC_7 = "3,00 - 4,00 -- Muito Baixo  (0ha - 0%)"
-CTC_8 = "1,60 - 3,00 -- Muito Baixo  (0ha - 0%)"
-CTC_9 = "Abaixo de 1,60 -- Muito Baixo  (0ha - 0%)"
-pH_1 = "Acima de 6,40 -- Muito Alto  (0ha - 0%)"
-pH_2 = "6,00 - 6,40 -- Alto  (0ha - 0%)"
-pH_3 = "5,40 - 6,00 -- Ideal  (325,51ha - 75,04%)"
-pH_4 = "5,00 - 5,40 -- Medio  (108,28ha - 24,96%)"
-pH_5 = "4,50 - 5,00 -- Baixo  (0ha - 0%)"
-pH_6 = "Abaixo de 4,50 -- Muito Baixo  (0ha - 0%)"
-Sat_B_1 = "Acima de 60,00 -- Alto  (392,38ha - 90,45%)"
-Sat_B_2 = "55,00 - 60,00 -- Medio Alto  (29,49ha - 6,8%)"
-Sat_B_3 = "50,00 - 55,00 -- Medio  (11,74ha - 2,71%)"
-Sat_B_4 = "45,00 - 50,00 -- Medio  (0,19ha - 0,04%)"
-Sat_B_5 = "40,00 - 45,00 -- Baixo  (0ha - 0%)"
-Sat_B_6 = "35,00 - 40,00 -- Baixo  (0ha - 0%)"
-Sat_B_7 = "30,00 - 35,00 -- Muito Baixo  (0ha - 0%)"
-Sat_B_8 = "25,00 - 30,00 -- Muito Baixo  (0ha - 0%)"
-Sat_B_9 = "Abaixo de 25,00 -- Muito Baixo  (0ha - 0%)"
-Cal_1 = "Acima de 5,00 -- Muito Alto  (3,39ha - 0,78%)"
-Cal_2 = "4,00 - 5,00 -- Alto  (142,43ha - 32,83%)"
-Cal_3 = "3,50 - 4,00 --  Medio  (134,68ha - 31,05%)"
-Cal_4 = "3,00 - 3,50 -- Medio  (113,05ha - 26,06%)"
-Cal_5 = "2,50 - 3,00 -- Medio  (39,82ha - 9,18%)"
-Cal_6 = "2,00 - 2,50 -- Baixo  (0,42ha - 0,1%)"
-Cal_7 = "1,50 - 2,00 -- Baixo  (0ha - 0%)"
-Cal_8 = "1,00 - 1,50 -- Muito Baixo  (0ha - 0%)"
-Cal_9 = "0,40 - 1,00 -- Muito Baixo  (0ha - 0%)"
-Cal_10 = "Abaixo de 0,40 -- Muito Baixo  (0ha - 0%)"
-Mg_1 = "Acima de 5,00 -- Alto  (0ha - 0%)"
-Mg_2 = "4,50 - 5,00 -- Alto  (0ha - 0%)"
-Mg_3 = "4,00 - 4,50 -- Alto  (0ha - 0%)"
-Mg_4 = "3,50 - 4,00 -- Alto  (0ha - 0%)"
-Mg_5 = "3,00 - 3,50 -- Alto  (0ha - 0%)"
-Mg_6 = "2,50 - 3,00 -- Alto  (0,09ha - 0,02%)"
-Mg_7 = "2,00 - 2,50 -- Alto  (30,23ha - 6,97%)"
-Mg_8 = "1,50 - 2,00 -- Alto  (52,19ha - 12,03%)"
-Mg_9 = "1,00 - 1,50 -- Medio  (139,73ha - 32,21%)"
-Mg_10 = "0,90 - 1,00 -- Medio  (165,41ha - 38,13%)"
-Mg_11 = "0,50 - 0,90 -- Baixo  (46,15ha - 10,64%)"
-Mg_12 = "Abaixo de 0,50 -- Baixo  (0ha - 0%)"
-Ca_mais_Mg_1 = "Acima de 7,00 -- Muito Alto  (15,91ha - 3,67%)"
-Ca_mais_Mg_2 = "5,55 - 7,00 -- Alto  (150,43ha - 34,68%)"
-Ca_mais_Mg_3 = "5,00 - 5,55 -- Medio Alto  (105,75ha - 24,38%)"
-Ca_mais_Mg_4 = "4,70 - 5,00 -- Baixo  (59,71ha - 13,76%)"
-Ca_mais_Mg_5 = "4,30 - 4,70 -- Baixo  (53,45ha - 12,32%)"
-Ca_mais_Mg_6 = "1,70 - 4,30 -- Muito Baixo  (48,54ha - 11,19%)"
-Al_1 = "0,60 - 1,00 -- Alto  (0ha - 0%)"
-Al_2 = "0,50 - 0,60 -- Adequado  (0ha - 0%)"
-Al_3 = "0,20 - 0,50 -- Medio Bom  (0ha - 0%)"
-Al_4 = "0,00 - 0,20 -- Baixo  (433,79ha - 100%)"
-HAL_1 = "6,00 - 7,00 -- Muito Alto  (0ha - 0%)"
-HAL_2 = "5,00 - 6,00 -- Alto  (0ha - 0%)"
-HAL_3 = "4,00 - 5,00 -- Medio  (0,03ha - 0,01%)"
-HAL_4 = "3,00 - 4,00 -- Medio  (116,12ha - 26,77%)"
-HAL_5 = "2,00 - 3,00 -- Baixo  (269,58ha - 62,15%)"
-HAL_6 = "1,00 - 2,00 -- Muito Baixo  (48,06ha - 11,08%)"
-Sat_Al_1 = "Acima de 6,00 -- Muito Alto  (0ha - 0%)"
-Sat_Al_2 = "4,00 - 6,00 -- Alto  (0ha - 0%)"
-Sat_Al_3 = "2,00 - 4,00 -- Medio  (0ha - 0%)"
-Sat_Al_4 = "Abaixo de 2,00 -- Baixo  (433,79ha - 100%)"
-K_ppm_1 = "Acima de 160,00 -- Muito Alto  (4,55ha - 1,05%)"
-K_ppm_2 = "140,00 -  160,00 -- Muito Alto  (22,01ha - 5,07%)"
-K_ppm_3 = "120,00 - 140,00 -- Muito Alto  (37,34ha - 8,61%)"
-K_ppm_4 = "100,00 - 120,00 -- Alto  (137,42ha - 31,68%)"
-K_ppm_5 = "90,00 - 100,00 -- Alto  (84,54ha - 19,49%)"
-K_ppm_6 = "80,00 - 90,00 -- Adequado  (74,6ha - 17,2%)"
-K_ppm_7 = "75,00 - 80,00 -- Adequado  (33,39ha - 7,7%)"
-K_ppm_8 = "70,00 - 75,00 -- Adequado  (23,92ha - 5,51%)"
-K_ppm_9 = "65,00 - 70,00 -- Medio  (8,82ha - 2,03%)"
-K_ppm_10 = "60,00 - 65,00 -- Medio  (5,88ha - 1,36%)"
-K_ppm_11 = "55,00 - 60,00 --  Medio  (1,35ha - 0,31%)"
-K_ppm_12 = "50,00 - 55,00 -- Medio  (0ha - 0%)"
-K_ppm_13 = "45,00 - 50,00 -- Medio  (0ha - 0%)"
-K_ppm_14 = "40,00 - 45,00 -- Medio Baixo  (0ha - 0%)"
-K_ppm_15 = "35,00 - 40,00 -- Medio Baixo  (0ha - 0%)"
-K_ppm_16 = "30,00 - 35,00 -- Medio Baixo  (0ha - 0%)"
-K_ppm_17 = "25,00 - 30,00 -- Baixo  (0ha - 0%)"
-K_ppm_18 = "20,00 - 25,00 -- Baixo  (0ha - 0%)"
-K_ppm_19 = "15,00 - 20,00 -- Muito Baixo  (0ha - 0%)"
-K_ppm_20 = "Abaixo de 15,00 -- Muito Baixo  (0ha - 0%)"
-P_Meh_1 = "Acima de 14,00 -- Bom  (85,33ha - 19,67%)"
-P_Meh_2 = "10,00 - 14,00 -- Medio  (131,2ha - 30,25%)"
-P_Meh_3 = "5,00 - 10,00 -- Baixo  (207,32ha - 47,79%)"
-P_Meh_4 = "Abaixo de 5,00 -- Muito Baixo  (9,94ha - 2,29%)"
-K_1 = "0,28 - 0,44 -- Alto  (116,85ha - 26,94%)"
-K_2 = "0,24 - 0,28 -- Alto  (140,82ha - 32,46%)"
-K_3 = "0,21 - 0,24 -- Medio Alto  (85,57ha - 19,73%)"
-K_4 = "0,17 - 0,21 -- Medio  (81,69ha - 18,83%)"
-K_5 = "0,14 - 0,17 -- Medio Baixo  (8,85ha - 2,04%)"
-K_6 = "0,13 - 0,14 -- Baixo  (0ha - 0%)"
-K_7 = "0,03 - 0,13 -- Baixo  (0ha - 0%)"
-S_1 = "10,00 - 18,00 -- Muito Alto  (6,79ha - 1,57%)"
-S_2 = "9,00 - 10,00 -- Alto  (4,82ha - 1,11%)"
-S_3 = "4,90 - 9,00 -- Medio  (62,34ha - 14,37%)"
-S_4 = "2,50 - 4,90 -- Baixo  (355,86ha - 82,04%)"
-S_5 = "1,00 - 2,50 -- Muito Baixo  (3,98ha - 0,92%)"
-B_1 = "Acima de 0,90 -- Muito Alto  (0ha - 0%)"
-B_2 = "0,60 - 0,90 -- Alto  (0ha - 0%)"
-B_3 = "0,35 - 0,60 -- Medio  (13,72ha - 3,16%)"
-B_4 = "0,15 - 0,35 -- Baixo  (420,08ha - 96,84%)"
-B_5 = "Abaixo de 0,15 -- Muito Baixo  (0ha - 0%)"
-Ca_CTC_1 = "Acima de 70,00 -- Muito Alto  (0ha - 0%)"
-Ca_CTC_2 = "60,00 - 70,00 -- Ideal  (0ha - 0%)"
-Ca_CTC_3 = "50,00 - 60,00 -- Ideal  (59,88ha - 13,8%)"
-Ca_CTC_4 = "40,00 - 50,00 -- Bom  (329,1ha - 75,87%)"
-Ca_CTC_5 = "30,00 - 40,00 -- Medio  (44,81ha - 10,33%)"
-Ca_CTC_6 = "25,00 - 30,00 -- Baixo  (0ha - 0%)"
-Ca_CTC_7 = "20,00 - 25,00 -- Baixo  (0ha - 0%)"
-Ca_CTC_8 = "15,00 - 20,00 -- Muito Baixo  (0ha - 0%)"
-Ca_CTC_9 = "Abaixo de 15,00 -- Muito Baixo  (0ha - 0%)"
-Mg_CTC_1 = "Acima de 20,00 -- Muito Alto  (193,6ha - 44,63%)"
-Mg_CTC_2 = "15,00 - 20,00 -- Alto  (122,6ha - 28,26%)"
-Mg_CTC_3 = "10,00 - 15,00 -- Medio  (111,98ha - 25,81%)"
-Mg_CTC_4 = "7,00 - 10,00 -- Baixo  (5,61ha - 1,29%)"
-Mg_CTC_5 = "Abaixo 7,00 -- Baixo  (0ha - 0%)"
-K_CTC_1 = "Acima de 6,00 -- Muito Alto  (0,14ha - 0,03%)"
-K_CTC_2 = "5,00 - 6,00 -- Alto  (2,17ha - 0,5%)"
-K_CTC_3 = "3,00 - 5,00 -- Adequado  (217,54ha - 50,15%)"
-K_CTC_4 = "2,00 - 3,00 -- Medio  (213,34ha - 49,18%)"
-K_CTC_5 = "1,00 - 2,00 -- Baixo  (0,6ha - 0,14%)"
-K_CTC_6 = "Abaixo de 1,00 -- Muito Baixo  (0ha - 0%)"
-HAL_CTC_1 = "Acima de 60,00 -- Muito Alto  (0ha - 0%)"
-HAL_CTC_2 = "40,00 - 60,00 -- Muito Alto  (41,79ha - 9,63%)"
-HAL_CTC_3 = "36,00 - 40,00 -- Alto  (85ha - 19,59%)"
-HAL_CTC_4 = "33,00 - 36,00 -- Medio  (75,41ha - 17,38%)"
-HAL_CTC_5 = "25,00 - 33,00 -- Baixo  (177,56ha - 40,93%)"
-HAL_CTC_6 = "Abaixo de 25,00 -- Muito Baixo  (54,03ha - 12,46%)"
-Ca_Mg_1 = "Acima de 5,00 -- Muito Alto  (0ha - 0%)"
-Ca_Mg_2 = "4,00 - 5,00 -- Alto  (12,09ha - 2,79%)"
-Ca_Mg_3 = "3,00 - 4,00 -- Adequado  (145,36ha - 33,51%)"
-Ca_Mg_4 = "2,00 - 3,00 -- Medio  (126,68ha - 29,2%)"
-Ca_Mg_5 = "1,10 - 2,00 -- Baixo  (149,65ha - 34,5%)"
-Ca_Mg_6 = "Abaixo de 1,10 -- Baixo  (0ha - 0%)"
-Ca_K_1 = "Acima de 15,00 -- Alto  (247,66ha - 57,09%)"
-Ca_K_2 = "14,90- 15,00 -- Adequado  (6,35ha - 1,46%)"
-Ca_K_3 = "12,00 - 14,90 -- Medio Baixo  (99,39ha - 22,91%)"
-Ca_K_4 = "9,00 - 12,00 -- Medio  (76,07ha - 17,54%)"
-Ca_K_5 = "7,00 - 9,00 -- Muito Baixo  (4,32ha - 1%)"
-Ca_K_6 = "Abaixo de 7,00 -- Muito Baixo  (0ha - 0%)"
-Mg_K_1 = "6,00 - 7,00 -- Muito Alto  (227,03ha - 52,34%)"
-Mg_K_2 = "5,00 - 6,00 -- Alto Bom  (100,03ha - 23,06%)"
-Mg_K_3 = "4,90 - 5,00 -- Adequado  (10,64ha - 2,45%)"
-Mg_K_4 = "3,00 - 4,90 -- Medio  (91,97ha - 21,2%)"
-Mg_K_5 = "2,00 - 3,00 -- Baixo  (4,13ha - 0,95%)"
-Mg_K_6 = "1,00 - 2,00 -- Muito Baixo  (0ha - 0%)"
-Mg_K_7 = "0,50 - 1,00 -- Muito Baixo  (0ha - 0%)"
-Cu_1 = "3,00 - 10,0 -- Alto  (2,73ha - 0,63%)"
-Cu_2 = "1,50 - 3,00 -- Medio  (214,21ha - 49,38%)"
-Cu_3 = "0,60 - 1,50 -- Baixo  (216,86ha - 49,99%)"
-Cu_4 = "0,30 - 0,60 -- Baixo  (0ha - 0%)"
-Fe_1 = "Acima de 220,00 -- Muito Alto  (0ha - 0%)"
-Fe_2 = "83,00 - 220,00 -- Alto  (61,15ha - 14,1%)"
-Fe_3 = "31,00 - 83,00 -- Medio  (321,55ha - 74,13%)"
-Fe_4 = "20,00 - 31,00 -- Baixo  (51,09ha - 11,78%)"
-Fe_5 = "Abaixo de 20,00 -- Muito Baixo  (0ha - 0%)"
-Mn_1 = "Acima de 130,00 -- Alto  (0ha - 0%)"
-Mn_2 = "12,00 - 130,00 -- Medio  (423,86ha - 97,71%)"
-Mn_3 = "6,00 - 12,00 -- Baixo  (9,93ha - 2,29%)"
-Mn_4 = "Abaixo de 6,00 -- Muito Baixo  (0ha - 0%)"
-Zn_1 = "Acima de 5,00 -- Muito Alto  (405,63ha - 93,51%)"
-Zn_2 = "1,60 - 5,00 -- Alto  (28,17ha - 6,49%)"
-Zn_3 = "1,00 - 1,60 -- Medio  (0ha - 0%)"
-Zn_4 = "Abaixo de 1,00 -- Baixo  (0ha - 0%)"
-Na_1 = "Acima de 6,00 -- Muito Alto  (0ha - 0%)"
-Na_2 = "4,44 - 6,00 -- Alto  (1,09ha - 0,25%)"
-Na_3 = "2,95 - 4,44 -- Medio Alto  (194,15ha - 44,76%)"
-Na_4 = "2,55 - 2,95 -- Medio  (151,39ha - 34,9%)"
-Na_5 = "2,22 - 2,55 -- Medio Baixo  (67,71ha - 15,61%)"
-Na_6 = "1,91 - 2,22 -- Baixo  (19,29ha - 4,45%)"
-Na_7 = "Abaixo de 1,91 -- Muito Baixo  (0,15ha - 0,03%)"
+Argila_1="Acima de 600,00 -- (3,62ha - 0,55%)"
+Argila_2="500,00 - 600,00 -- (218,73ha - 33,48%)"
+Argila_3="450,00 - 500,00 -- (98,33ha - 15,05%)"
+Argila_4="400,00 - 450,00 -- (101,23ha - 15,49%)"
+Argila_5="350,00 - 400,00 -- (54,96ha - 8,41%)"
+Argila_6="300,00 - 350,00 -- (26,76ha - 4,1%)"
+Argila_7="250,00 - 300,00 -- (51,62ha - 7,9%)"
+Argila_8="220,00 - 250,00 -- (91,59ha - 14,02%)"
+Argila_9="180,00 - 220,00 -- (6,49ha - 0,99%)"
+Argila_10="120,00 - 180,00 -- (0ha - 0%)"
+Argila_11="Abaixo de 120,00 -- (0ha - 0%)"
+Areia_1="Acima de 800,00 -- (0ha - 0%)"
+Areia_2="700,00 - 800,00 -- (98,25ha - 15,04%)"
+Areia_3="600,00 - 700,00 -- (78,26ha - 11,98%)"
+Areia_4="550,00 - 600,00 -- (55,04ha - 8,42%)"
+Areia_5="500,00 - 550,00 -- (101,21ha - 15,49%)"
+Areia_6="450,00 - 500,00 -- (98,38ha - 15,06%)"
+Areia_7="400,00 - 450,00 -- (138,25ha - 21,16%)"
+Areia_8="350,00 - 400,00 -- (80,32ha - 12,29%)"
+Areia_9="Abaixo de 350,00 -- (3,6ha - 0,55%)"
+Silte_1="Acima de 250,00 -- (0ha - 0%)"
+Silte_2="200,00 - 250,00  -- (0ha - 0%)"
+Silte_3="150,00 - 200,00 -- (0ha - 0%)"
+Silte_4="100,00 - 150,00 -- (0ha - 0%)"
+Silte_5="50,00 - 100,00 -- (653,32ha - 100%)"
+Silte_6="Abaixo de 50,00 -- (0ha - 0%)"
+Mat_Or_1="Acima de 38,00 -- Alto  (21,56ha - 3,3%)"
+Mat_Or_2="35,00 - 38,00 -- Medio Alto  (18,46ha - 2,83%)"
+Mat_Or_3="33,00 - 35,00 -- Medio  (15,59ha - 2,39%)"
+Mat_Or_4="28,00 - 33,00 -- Medio  (98,49ha - 15,08%)"
+Mat_Or_5="25,00 - 28,00 -- Medio Baixo  (122,62ha - 18,77%)"
+Mat_Or_6="22,00 - 25,00 -- Baixo  (109,51ha - 16,76%)"
+Mat_Or_7="20,00 - 22,00 -- Baixo  (47,96ha - 7,34%)"
+Mat_Or_8="17,00 - 20,00 -- Muito Baixo  (69,38ha - 10,62%)"
+Mat_Or_9="Abaixo de 17,00 -- Muito Baixo  (149,74ha - 22,92%)"
+Carb_Or_1="Acima de 20,00 -- Muito Alto  (43,46ha - 6,65%)"
+Carb_Or_2="18,00 - 20,00 -- Alto  (38,12ha - 5,83%)"
+Carb_Or_3="16,00 - 18,00 -- Medio Alto  (86,42ha - 13,23%)"
+Carb_Or_4="14,00 - 16,00 -- Medio  (139,39ha - 21,34%)"
+Carb_Or_5="12,00 - 14,00 -- Baixo  (111,46ha - 17,06%)"
+Carb_Or_6="Abaixo de 12,00 -- Muito Baixo  (234,46ha - 35,89%)"
+CTC_1="Acima de 9,00 -- Muito Bom  (201,82ha - 30,89%)"
+CTC_2="8,00 - 9,00 -- Muito Bom  (171,61ha - 26,27%)"
+CTC_3="7,00 - 8,00 -- Bom  (98,64ha - 15,1%)"
+CTC_4="6,00 - 7,00 --Bom  (103,36ha - 15,82%)"
+CTC_5="5,00 - 6,00 -- Medio  (77,55ha - 11,87%)"
+CTC_6="4,00 - 5,00 -- Baixo  (0,34ha - 0,05%)"
+CTC_7="3,00 - 4,00 -- Muito Baixo  (0ha - 0%)"
+CTC_8="1,60 - 3,00 -- Muito Baixo  (0ha - 0%)"
+CTC_9="Abaixo de 1,60 -- Muito Baixo  (0ha - 0%)"
+pH_1="Acima de 6,40 -- Muito Alto  (0ha - 0%)"
+pH_2="6,00 - 6,40 -- Alto  (0ha - 0%)"
+pH_3="5,40 - 6,00 -- Ideal  (91,66ha - 14,03%)"
+pH_4="5,00 - 5,40 -- Medio  (229,77ha - 35,17%)"
+pH_5="4,50 - 5,00 -- Baixo  (317,85ha - 48,65%)"
+pH_6="Abaixo de 4,50 -- Muito Baixo  (14,04ha - 2,15%)"
+Sat_B_1="Acima de 60,00 -- Alto  (218,69ha - 33,47%)"
+Sat_B_2="55,00 - 60,00 -- Medio Alto  (97,3ha - 14,89%)"
+Sat_B_3="50,00 - 55,00 -- Medio  (134,55ha - 20,59%)"
+Sat_B_4="45,00 - 50,00 -- Medio  (89,04ha - 13,63%)"
+Sat_B_5="40,00 - 45,00 -- Baixo  (59,49ha - 9,11%)"
+Sat_B_6="35,00 - 40,00 -- Baixo  (34,24ha - 5,24%)"
+Sat_B_7="30,00 - 35,00 -- Muito Baixo  (13,07ha - 2%)"
+Sat_B_8="25,00 - 30,00 -- Muito Baixo  (5,77ha - 0,88%)"
+Sat_B_9="Abaixo de 25,00 -- Muito Baixo  (1,18ha - 0,18%)"
+Cal_1="Acima de 5,00 -- Muito Alto  (1,37ha - 0,21%)"
+Cal_2="4,00 - 5,00 -- Alto  (27,02ha - 4,14%)"
+Cal_3="3,50 - 4,00 --  Medio  (101,65ha - 15,56%)"
+Cal_4="3,00 - 3,50 -- Medio  (206,48ha - 31,6%)"
+Cal_5="2,50 - 3,00 -- Medio  (235,33ha - 36,02%)"
+Cal_6="2,00 - 2,50 -- Baixo  (62,05ha - 9,5%)"
+Cal_7="1,50 - 2,00 -- Baixo  (19,43ha - 2,97%)"
+Cal_8="1,00 - 1,50 -- Muito Baixo  (0ha - 0%)"
+Cal_9="0,40 - 1,00 -- Muito Baixo  (0ha - 0%)"
+Cal_10="Abaixo de 0,40 -- Muito Baixo  (0ha - 0%)"
+Mg_1="Acima de 5,00 -- Alto  (0ha - 0%)"
+Mg_2="4,50 - 5,00 -- Alto  (0ha - 0%)"
+Mg_3="4,00 - 4,50 -- Alto  (0ha - 0%)"
+Mg_4="3,50 - 4,00 -- Alto  (0ha - 0%)"
+Mg_5="3,00 - 3,50 -- Alto  (0ha - 0%)"
+Mg_6="2,50 - 3,00 -- Alto  (0ha - 0%)"
+Mg_7="2,00 - 2,50 -- Alto  (0ha - 0%)"
+Mg_8="1,50 - 2,00 -- Alto  (3,94ha - 0,6%)"
+Mg_9="1,00 - 1,50 -- Medio  (91,7ha - 14,04%)"
+Mg_10="0,90 - 1,00 -- Medio  (377,66ha - 57,81%)"
+Mg_11="0,50 - 0,90 -- Baixo  (180,02ha - 27,55%)"
+Mg_12="Abaixo de 0,50 -- Baixo  (0ha - 0%)"
+Ca_mais_Mg_1="Acima de 7,00 -- Muito Alto  (1,06ha - 0,16%)"
+Ca_mais_Mg_2="5,55 - 7,00 -- Alto  (27,53ha - 4,21%)"
+Ca_mais_Mg_3="5,00 - 5,55 -- Medio Alto  (66,64ha - 10,2%)"
+Ca_mais_Mg_4="4,70 - 5,00 -- Baixo  (71,78ha - 10,99%)"
+Ca_mais_Mg_5="4,30 - 4,70 -- Baixo  (110,36ha - 16,89%)"
+Ca_mais_Mg_6="1,70 - 4,30 -- Muito Baixo  (375,94ha - 57,54%)"
+Al_1="0,60 - 1,00 -- Alto  (6,06ha - 0,93%)"
+Al_2="0,50 - 0,60 -- Adequado  (2,04ha - 0,31%)"
+Al_3="0,20 - 0,50 -- Medio Bom  (11,36ha - 1,74%)"
+Al_4="0,00 - 0,20 -- Baixo  (633,86ha - 97,02%)"
+HAL_1="6,00 - 7,00 -- Muito Alto  (44,62ha - 6,83%)"
+HAL_2="5,00 - 6,00 -- Alto  (76,88ha - 11,77%)"
+HAL_3="4,00 - 5,00 -- Medio  (174,84ha - 26,76%)"
+HAL_4="3,00 - 4,00 -- Medio  (151,82ha - 23,24%)"
+HAL_5="2,00 - 3,00 -- Baixo  (68,71ha - 10,52%)"
+HAL_6="1,00 - 2,00 -- Muito Baixo  (136,45ha - 20,89%)"
+Sat_Al_1="Acima de 6,00 -- Muito Alto  (18,22ha - 2,79%)"
+Sat_Al_2="4,00 - 6,00 -- Alto  (9,52ha - 1,46%)"
+Sat_Al_3="2,00 - 4,00 -- Medio  (62,03ha - 9,49%)"
+Sat_Al_4="Abaixo de 2,00 -- Baixo  (563,55ha - 86,26%)"
+K_ppm_1="Acima de 160,00 -- Muito Alto  (0,91ha - 0,14%)"
+K_ppm_2="140,00 -  160,00 -- Muito Alto  (4,38ha - 0,67%)"
+K_ppm_3="120,00 - 140,00 -- Muito Alto  (17,52ha - 2,68%)"
+K_ppm_4="100,00 - 120,00 -- Alto  (45,3ha - 6,93%)"
+K_ppm_5="90,00 - 100,00 -- Alto  (74,16ha - 11,35%)"
+K_ppm_6="80,00 - 90,00 -- Adequado  (64,34ha - 9,85%)"
+K_ppm_7="75,00 - 80,00 -- Adequado  (33,34ha - 5,1%)"
+K_ppm_8="70,00 - 75,00 -- Adequado  (41,97ha - 6,42%)"
+K_ppm_9="65,00 - 70,00 -- Medio  (56,89ha - 8,71%)"
+K_ppm_10="60,00 - 65,00 -- Medio  (58,42ha - 8,94%)"
+K_ppm_11="55,00 - 60,00 --  Medio  (71,55ha - 10,95%)"
+K_ppm_12="50,00 - 55,00 -- Medio  (76,61ha - 11,73%)"
+K_ppm_13="45,00 - 50,00 -- Medio  (52,05ha - 7,97%)"
+K_ppm_14="40,00 - 45,00 -- Medio Baixo  (29,63ha - 4,54%)"
+K_ppm_15="35,00 - 40,00 -- Medio Baixo  (14,5ha - 2,22%)"
+K_ppm_16="30,00 - 35,00 -- Medio Baixo  (11,72ha - 1,79%)"
+K_ppm_17="25,00 - 30,00 -- Baixo  (0ha - 0%)"
+K_ppm_18="20,00 - 25,00 -- Baixo  (0ha - 0%)"
+K_ppm_19="15,00 - 20,00 -- Muito Baixo  (0ha - 0%)"
+K_ppm_20="Abaixo de 15,00 -- Muito Baixo  (0ha - 0%)"
+P_Meh_1="Acima de 14,00 -- Bom  (175,29ha - 26,83%)"
+P_Meh_2="10,00 - 14,00 -- Medio  (30ha - 4,59%)"
+P_Meh_3="5,00 - 10,00 -- Baixo  (127,95ha - 19,58%)"
+P_Meh_4="Abaixo de 5,00 -- Muito Baixo  (320,08ha - 48,99%)"
+K_1="0,28 - 0,44 -- Alto  (40,6ha - 6,21%)"
+K_2="0,24 - 0,28 -- Alto  (75,66ha - 11,58%)"
+K_3="0,21 - 0,24 -- Medio Alto  (77,27ha - 11,83%)"
+K_4="0,17 - 0,21 -- Medio  (123,1ha - 18,84%)"
+K_5="0,14 - 0,17 -- Medio Baixo  (152,29ha - 23,31%)"
+K_6="0,13 - 0,14 -- Baixo  (65,07ha - 9,96%)"
+K_7="0,03 - 0,13 -- Baixo  (119,32ha - 18,26%)"
+S_1="10,00 - 18,00 -- Muito Alto  (59,42ha - 9,1%)"
+S_2="9,00 - 10,00 -- Alto  (32,18ha - 4,93%)"
+S_3="4,90 - 9,00 -- Medio  (338,12ha - 51,75%)"
+S_4="2,50 - 4,90 -- Baixo  (201,88ha - 30,9%)"
+S_5="1,00 - 2,50 -- Muito Baixo  (21,71ha - 3,32%)"
+B_1="Acima de 0,90 -- Muito Alto  (0ha - 0%)"
+B_2="0,60 - 0,90 -- Alto  (0ha - 0%)"
+B_3="0,35 - 0,60 -- Medio  (0ha - 0%)"
+B_4="0,15 - 0,35 -- Baixo  (653,32ha - 100%)"
+B_5="Abaixo de 0,15 -- Muito Baixo  (0ha - 0%)"
+Ca_CTC_1="Acima de 70,00 -- Muito Alto  (0ha - 0%)"
+Ca_CTC_2="60,00 - 70,00 -- Ideal  (3,74ha - 0,57%)"
+Ca_CTC_3="50,00 - 60,00 -- Ideal  (123,26ha - 18,87%)"
+Ca_CTC_4="40,00 - 50,00 -- Bom  (118,81ha - 18,19%)"
+Ca_CTC_5="30,00 - 40,00 -- Medio  (292,49ha - 44,77%)"
+Ca_CTC_6="25,00 - 30,00 -- Baixo  (75,37ha - 11,54%)"
+Ca_CTC_7="20,00 - 25,00 -- Baixo  (31,11ha - 4,76%)"
+Ca_CTC_8="15,00 - 20,00 -- Muito Baixo  (8,39ha - 1,28%)"
+Ca_CTC_9="Abaixo de 15,00 -- Muito Baixo  (0,14ha - 0,02%)"
+Mg_CTC_1="Acima de 20,00 -- Muito Alto  (8,99ha - 1,38%)"
+Mg_CTC_2="15,00 - 20,00 -- Alto  (334,66ha - 51,22%)"
+Mg_CTC_3="10,00 - 15,00 -- Medio  (274,66ha - 42,04%)"
+Mg_CTC_4="7,00 - 10,00 -- Baixo  (33,73ha - 5,16%)"
+Mg_CTC_5="Abaixo 7,00 -- Baixo  (1,29ha - 0,2%)"
+K_CTC_1="Acima de 6,00 -- Muito Alto  (0ha - 0%)"
+K_CTC_2="5,00 - 6,00 -- Alto  (0ha - 0%)"
+K_CTC_3="3,00 - 5,00 -- Adequado  (86,74ha - 13,28%)"
+K_CTC_4="2,00 - 3,00 -- Medio  (331,09ha - 50,68%)"
+K_CTC_5="1,00 - 2,00 -- Baixo  (225,11ha - 34,46%)"
+K_CTC_6="Abaixo de 1,00 -- Muito Baixo  (10,38ha - 1,59%)"
+HAL_CTC_1="Acima de 60,00 -- Muito Alto  (53,92ha - 8,25%)"
+HAL_CTC_2="40,00 - 60,00 -- Muito Alto  (379,61ha - 58,1%)"
+HAL_CTC_3="36,00 - 40,00 -- Alto  (50,27ha - 7,69%)"
+HAL_CTC_4="33,00 - 36,00 -- Medio  (26,13ha - 4%)"
+HAL_CTC_5="25,00 - 33,00 -- Baixo  (89,81ha - 13,75%)"
+HAL_CTC_6="Abaixo de 25,00 -- Muito Baixo  (53,57ha - 8,2%)"
+Ca_Mg_1="Acima de 5,00 -- Muito Alto  (0ha - 0%)"
+Ca_Mg_2="4,00 - 5,00 -- Alto  (0ha - 0%)"
+Ca_Mg_3="3,00 - 4,00 -- Adequado  (172,86ha - 26,46%)"
+Ca_Mg_4="2,00 - 3,00 -- Medio  (369,47ha - 56,55%)"
+Ca_Mg_5="1,10 - 2,00 -- Baixo  (110,99ha - 16,99%)"
+Ca_Mg_6="Abaixo de 1,10 -- Baixo  (0ha - 0%)"
+Ca_K_1="Acima de 15,00 -- Alto  (481,69ha - 73,73%)"
+Ca_K_2="14,90- 15,00 -- Adequado  (3,45ha - 0,53%)"
+Ca_K_3="12,00 - 14,90 -- Medio Baixo  (78,41ha - 12%)"
+Ca_K_4="9,00 - 12,00 -- Medio  (57,32ha - 8,77%)"
+Ca_K_5="7,00 - 9,00 -- Muito Baixo  (25,43ha - 3,89%)"
+Ca_K_6="Abaixo de 7,00 -- Muito Baixo  (7,01ha - 1,07%)"
+Mg_K_1="6,00 - 7,00 -- Muito Alto  (462,02ha - 70,72%)"
+Mg_K_2="5,00 - 6,00 -- Alto Bom  (95,67ha - 14,64%)"
+Mg_K_3="4,90 - 5,00 -- Adequado  (7,72ha - 1,18%)"
+Mg_K_4="3,00 - 4,90 -- Medio  (84,02ha - 12,86%)"
+Mg_K_5="2,00 - 3,00 -- Baixo  (3,89ha - 0,6%)"
+Mg_K_6="1,00 - 2,00 -- Muito Baixo  (0ha - 0%)"
+Mg_K_7="0,50 - 1,00 -- Muito Baixo  (0ha - 0%)"
+Cu_1="3,00 - 10,0 -- Alto  (5,47ha - 0,84%)"
+Cu_2="1,50 - 3,00 -- Medio  (4,2ha - 0,64%)"
+Cu_3="0,60 - 1,50 -- Baixo  (25,97ha - 3,98%)"
+Cu_4="0,30 - 0,60 -- Baixo  (617,68ha - 94,54%)"
+Fe_1="Acima de 220,00 -- Muito Alto  (0ha - 0%)"
+Fe_2="83,00 - 220,00 -- Alto  (0ha - 0%)"
+Fe_3="31,00 - 83,00 -- Medio  (443,64ha - 67,91%)"
+Fe_4="20,00 - 31,00 -- Baixo  (203,6ha - 31,16%)"
+Fe_5="Abaixo de 20,00 -- Muito Baixo  (6,08ha - 0,93%)"
+Mn_1="Acima de 130,00 -- Alto  (0ha - 0%)"
+Mn_2="12,00 - 130,00 -- Medio  (475,36ha - 72,76%)"
+Mn_3="6,00 - 12,00 -- Baixo  (177,96ha - 27,24%)"
+Mn_4="Abaixo de 6,00 -- Muito Baixo  (0ha - 0%)"
+Zn_1="Acima de 5,00 -- Muito Alto  (4,08ha - 0,62%)"
+Zn_2="1,60 - 5,00 -- Alto  (130,24ha - 19,94%)"
+Zn_3="1,00 - 1,60 -- Medio  (78,8ha - 12,06%)"
+Zn_4="Abaixo de 1,00 -- Baixo  (440,19ha - 67,38%)"
+Na_1="Acima de 6,00 -- Muito Alto  (102,16ha - 15,64%)"
+Na_2="4,44 - 6,00 -- Alto  (124,22ha - 19,01%)"
+Na_3="2,95 - 4,44 -- Medio Alto  (250,04ha - 38,27%)"
+Na_4="2,55 - 2,95 -- Medio  (71,97ha - 11,02%)"
+Na_5="2,22 - 2,55 -- Medio Baixo  (47,78ha - 7,31%)"
+Na_6="1,91 - 2,22 -- Baixo  (32,88ha - 5,03%)"
+Na_7="Abaixo de 1,91 -- Muito Baixo  (24,27ha - 3,71%)"
 
-min_3 = "Minimo: 174,66 g/dm³"
-max_3 = "Maximo: 512,93 g/dm³"
-med_3 = "Medio: 341,78 g/dm³"
-total_3 = "Total: 6493,9 g/dm³"
-count_3 = "Contagem: 19 "
-min_4 = "Minimo: 437,06 g/dm³"
-max_4 = "Maximo: 723,06 g/dm³"
-med_4 = "Medio: 573,6 g/dm³"
-total_4 = "Total: 7456,76 g/dm³"
-count_4 = "Contagem: 13 "
-min_5 = "Minimo: 50 g/dm³"
-max_5 = "Maximo: 50 g/dm³"
-med_5 = "Medio: 50 g/dm³"
-total_5 = "Total: 50 g/dm³"
-count_5 = "Contagem: 1 "
-min_6 = "Minimo: 19,41 g/dm³"
-max_6 = "Maximo: 33,61 g/dm³"
-med_6 = "Medio: 24,46 g/dm³"
-total_6 = "Total: 684,92 g/dm³"
-count_6 = "Contagem: 28 "
-min_7 = "Minimo: 11,56 g/dm³"
-max_7 = "Maximo: 20,09 g/dm³"
-med_7 = "Medio: 14,71 g/dm³"
-total_7 = "Total: 411,91 g/dm³"
-count_7 = "Contagem: 28 "
-min_8 = "Minimo: 6,57 cmol/dm³"
-max_8 = "Maximo: 9,5 cmol/dm³"
-med_8 = "Medio: 7,83 cmol/dm³"
-total_8 = "Total: 109,58 cmol/dm³"
-count_8 = "Contagem: 14 "
-min_9 = "Minimo: 5,29 "
-max_9 = "Maximo: 5,59 "
-med_9 = "Medio: 5,37 "
-total_9 = "Total: 53,75 "
-count_9 = "Contagem: 10 "
-min_10 = "Minimo: 49,77 %"
-max_10 = "Maximo: 70,65 %"
-med_10 = "Medio: 57,42 %"
-total_10 = "Total: 1091,07 %"
-count_10 = "Contagem: 19 "
-min_11 = "Minimo: 2,42 cmol/dm³"
-max_11 = "Maximo: 5,08 cmol/dm³"
-med_11 = "Medio: 3,39 cmol/dm³"
-total_11 = "Total: 88,23 cmol/dm³"
-count_11 = "Contagem: 26 "
-min_12 = "Minimo: 0,81 cmol/dm³"
-max_12 = "Maximo: 3,01 cmol/dm³"
-med_12 = "Medio: 1,49 cmol/dm³"
-total_12 = "Total: 50,81 cmol/dm³"
-count_12 = "Contagem: 34 "
-min_13 = "Minimo: 3,96 cmol/dm³"
-max_13 = "Maximo: 7,15 cmol/dm³"
-med_13 = "Medio: 5,06 cmol/dm³"
-total_13 = "Total: 202,58 cmol/dm³"
-count_13 = "Contagem: 40 "
-min_14 = "Minimo: 0 cmol/dm³"
-max_14 = "Maximo: 0 cmol/dm³"
-med_14 = "Medio: 0 cmol/dm³"
-total_14 = "Total: 0 cmol/dm³"
-count_14 = "Contagem: 1 "
-min_15 = "Minimo: 1,7 cmol/dm³"
-max_15 = "Maximo: 4,02 cmol/dm³"
-med_15 = "Medio: 2,5 cmol/dm³"
-total_15 = "Total: 62,59 cmol/dm³"
-count_15 = "Contagem: 25 "
-min_16 = "Minimo: 0,08 %"
-max_16 = "Maximo: 0,08 %"
-med_16 = "Medio: 0,08 %"
-total_16 = "Total: 0,08 %"
-count_16 = "Contagem: 1 "
-min_17 = "Minimo: 58,61 mg/dm³"
-max_17 = "Maximo: 169,84 mg/dm³"
-med_17 = "Medio: 87,23 mg/dm³"
-total_17 = "Total: 7065,63 mg/dm³"
-count_17 = "Contagem: 81 "
-min_18 = "Minimo: 4,58 mg/dm³"
-max_18 = "Maximo: 19,43 mg/dm³"
-med_18 = "Medio: 11,48 mg/dm³"
-total_18 = "Total: 252,65 mg/dm³"
-count_18 = "Contagem: 22 "
-min_19 = "Minimo: 0,16 cmol/dm³"
-max_19 = "Maximo: 0,34 cmol/dm³"
-med_19 = "Medio: 0,23 cmol/dm³"
-total_19 = "Total: 8,26 cmol/dm³"
-count_19 = "Contagem: 36 "
-min_20 = "Minimo: 2,23 mg/dm³"
-max_20 = "Maximo: 11,95 mg/dm³"
-med_20 = "Medio: 7,32 mg/dm³"
-total_20 = "Total: 146,44 mg/dm³"
-count_20 = "Contagem: 20 "
-min_21 = "Minimo: 0,3 mg/dm³"
-max_21 = "Maximo: 0,36 mg/dm³"
-med_21 = "Medio: 0,34 mg/dm³"
-total_21 = "Total: 2,06 mg/dm³"
-count_21 = "Contagem: 6 "
-min_22 = "Minimo: 38,04 %"
-max_22 = "Maximo: 51,74 %"
-med_22 = "Medio: 45,08 %"
-total_22 = "Total: 946,62 %"
-count_22 = "Contagem: 21 "
-min_23 = "Minimo: 9,46 %"
-max_23 = "Maximo: 23,23 %"
-med_23 = "Medio: 17,39 %"
-total_23 = "Total: 382,62 %"
-count_23 = "Contagem: 22 "
-min_24 = "Minimo: 1,93 %"
-max_24 = "Maximo: 6,09 %"
-med_24 = "Medio: 3,21 %"
-total_24 = "Total: 57,72 %"
-count_24 = "Contagem: 18 "
-min_25 = "Minimo: 20,83 %"
-max_25 = "Maximo: 44,23 %"
-med_25 = "Medio: 33,28 %"
-total_25 = "Total: 1697,43 %"
-count_25 = "Contagem: 51 "
-min_26 = "Minimo: 1,77 "
-max_26 = "Maximo: 4,19 "
-med_26 = "Medio: 3,21 "
-total_26 = "Total: 32,06 "
-count_26 = "Contagem: 10 "
-min_27 = "Minimo: 8,52 "
-max_27 = "Maximo: 17,4 "
-med_27 = "Medio: 13,22 "
-total_27 = "Total: 502,42 "
-count_27 = "Contagem: 38 "
-min_28 = "Minimo: 2,72 "
-max_28 = "Maximo: 6,5 "
-med_28 = "Medio: 4,83 "
-total_28 = "Total: 183,5 "
-count_28 = "Contagem: 38 "
-min_29 = "Minimo: 1,28 mg/dm³"
-max_29 = "Maximo: 3,17 mg/dm³"
-med_29 = "Medio: 1,95 mg/dm³"
-total_29 = "Total: 21,4 mg/dm³"
-count_29 = "Contagem: 11 "
-min_30 = "Minimo: 28,9 mg/dm³"
-max_30 = "Maximo: 113,22 mg/dm³"
-med_30 = "Medio: 58,18 mg/dm³"
-total_30 = "Total: 814,52 mg/dm³"
-count_30 = "Contagem: 14 "
-min_31 = "Minimo: 11,25 mg/dm³"
-max_31 = "Maximo: 15,26 mg/dm³"
-med_31 = "Medio: 12,13 mg/dm³"
-total_31 = "Total: 121,29 mg/dm³"
-count_31 = "Contagem: 10 "
-min_32 = "Minimo: 4,02 mg/dm³"
-max_32 = "Maximo: 8,49 mg/dm³"
-med_32 = "Medio: 5,03 mg/dm³"
-total_32 = "Total: 45,3 mg/dm³"
-count_32 = "Contagem: 9 "
-min_33 = "Minimo: 1,88 mg/dm³"
-max_33 = "Maximo: 4,67 mg/dm³"
-med_33 = "Medio: 2,49 mg/dm³"
-total_33 = "Total: 69,68 mg/dm³"
-count_33 = "Contagem: 28 "
+min_3="Minimo: 214,76 g/dm³"
+max_3="Maximo: 606,31 g/dm³"
+med_3="Medio: 401,8 g/dm³"
+total_3="Total: 10044,9 g/dm³"
+count_3="Contagem: 25 "
+min_4="Minimo: 343,65 g/dm³"
+max_4="Maximo: 715,05 g/dm³"
+med_4="Medio: 500,07 g/dm³"
+total_4="Total: 12501,81 g/dm³"
+count_4="Contagem: 25 "
+min_5="Minimo: 50 g/dm³"
+max_5="Maximo: 50 g/dm³"
+med_5="Medio: 50 g/dm³"
+total_5="Total: 50 g/dm³"
+count_5="Contagem: 1 "
+min_6="Minimo: 15,41 g/dm³"
+max_6="Maximo: 40,56 g/dm³"
+med_6="Medio: 25,94 g/dm³"
+total_6="Total: 1089,56 g/dm³"
+count_6="Contagem: 42 "
+min_7="Minimo: 9,94 g/dm³"
+max_7="Maximo: 21,54 g/dm³"
+med_7="Medio: 15,14 g/dm³"
+total_7="Total: 439,16 g/dm³"
+count_7="Contagem: 29 "
+min_8="Minimo: 4,97 cmol/dm³"
+max_8="Maximo: 10,26 cmol/dm³"
+med_8="Medio: 7,13 cmol/dm³"
+total_8="Total: 142,68 cmol/dm³"
+count_8="Contagem: 20 "
+min_9="Minimo: 4,41 "
+max_9="Maximo: 5,49 "
+med_9="Medio: 4,9 "
+total_9="Total: 68,57 "
+count_9="Contagem: 14 "
+min_10="Minimo: 24,11 %"
+max_10="Maximo: 66,6 %"
+med_10="Medio: 46,13 %"
+total_10="Total: 2721,43 %"
+count_10="Contagem: 59 "
+min_11="Minimo: 1,83 cmol/dm³"
+max_11="Maximo: 5,17 cmol/dm³"
+med_11="Medio: 3,2 cmol/dm³"
+total_11="Total: 175,94 cmol/dm³"
+count_11="Contagem: 55 "
+min_12="Minimo: 0,8 cmol/dm³"
+max_12="Maximo: 2,1 cmol/dm³"
+med_12="Medio: 1,25 cmol/dm³"
+total_12="Total: 52,64 cmol/dm³"
+count_12="Contagem: 42 "
+min_13="Minimo: 3,9 cmol/dm³"
+max_13="Maximo: 7,27 cmol/dm³"
+med_13="Medio: 5,08 cmol/dm³"
+total_13="Total: 279,54 cmol/dm³"
+count_13="Contagem: 55 "
+min_14="Minimo: 0,05 cmol/dm³"
+max_14="Maximo: 0,65 cmol/dm³"
+med_14="Medio: 0,46 cmol/dm³"
+total_14="Total: 2,79 cmol/dm³"
+count_14="Contagem: 6 "
+min_15="Minimo: 1,66 cmol/dm³"
+max_15="Maximo: 6,42 cmol/dm³"
+med_15="Medio: 4,02 cmol/dm³"
+total_15="Total: 124,48 cmol/dm³"
+count_15="Contagem: 31 "
+min_16="Minimo: 0,8 %"
+max_16="Maximo: 12,29 %"
+med_16="Medio: 3,86 %"
+total_16="Total: 34,74 %"
+count_16="Contagem: 9 "
+min_17="Minimo: 33,28 mg/dm³"
+max_17="Maximo: 162,03 mg/dm³"
+med_17="Medio: 73,71 mg/dm³"
+total_17="Total: 7887,44 mg/dm³"
+count_17="Contagem: 107 "
+min_18="Minimo: 2,16 mg/dm³"
+max_18="Maximo: 26,39 mg/dm³"
+med_18="Medio: 10,71 mg/dm³"
+total_18="Total: 289,22 mg/dm³"
+count_18="Contagem: 27 "
+min_19="Minimo: 0,11 cmol/dm³"
+max_19="Maximo: 0,32 cmol/dm³"
+med_19="Medio: 0,2 cmol/dm³"
+total_19="Total: 8,78 cmol/dm³"
+count_19="Contagem: 45 "
+min_20="Minimo: 1,65 mg/dm³"
+max_20="Maximo: 12,89 mg/dm³"
+med_20="Medio: 7,56 mg/dm³"
+total_20="Total: 309,76 mg/dm³"
+count_20="Contagem: 41 "
+min_21="Minimo: 0,19 mg/dm³"
+max_21="Maximo: 0,19 mg/dm³"
+med_21="Medio: 0,19 mg/dm³"
+total_21="Total: 0,19 mg/dm³"
+count_21="Contagem: 1 "
+min_22="Minimo: 14,79 %"
+max_22="Maximo: 60,4 %"
+med_22="Medio: 34,7 %"
+total_22="Total: 1249,29 %"
+count_22="Contagem: 36 "
+min_23="Minimo: 6,67 %"
+max_23="Maximo: 20,91 %"
+med_23="Medio: 14,38 %"
+total_23="Total: 330,74 %"
+count_23="Contagem: 23 "
+min_24="Minimo: 0,86 %"
+max_24="Maximo: 3,33 %"
+med_24="Medio: 2,39 %"
+total_24="Total: 59,78 %"
+count_24="Contagem: 25 "
+min_25="Minimo: 22,6 %"
+max_25="Maximo: 64,75 %"
+med_25="Medio: 40,81 %"
+total_25="Total: 1836,3 %"
+count_25="Contagem: 45 "
+min_26="Minimo: 1,88 "
+max_26="Maximo: 3,27 "
+med_26="Medio: 2,77 "
+total_26="Total: 27,71 "
+count_26="Contagem: 10 "
+min_27="Minimo: 6,59 "
+max_27="Maximo: 22,25 "
+med_27="Medio: 12,82 "
+total_27="Total: 525,75 "
+count_27="Contagem: 41 "
+min_28="Minimo: 2,79 "
+max_28="Maximo: 6,48 "
+med_28="Medio: 4,95 "
+total_28="Total: 197,88 "
+count_28="Contagem: 40 "
+min_29="Minimo: 0,31 mg/dm³"
+max_29="Maximo: 3,83 mg/dm³"
+med_29="Medio: 1,22 mg/dm³"
+total_29="Total: 9,77 mg/dm³"
+count_29="Contagem: 8 "
+min_30="Minimo: 17,99 mg/dm³"
+max_30="Maximo: 41,71 mg/dm³"
+med_30="Medio: 27,56 mg/dm³"
+total_30="Total: 330,77 mg/dm³"
+count_30="Contagem: 12 "
+min_31="Minimo: 10,43 mg/dm³"
+max_31="Maximo: 17,22 mg/dm³"
+med_31="Medio: 11,86 mg/dm³"
+total_31="Total: 130,51 mg/dm³"
+count_31="Contagem: 11 "
+min_32="Minimo: 0,53 mg/dm³"
+max_32="Maximo: 6,14 mg/dm³"
+med_32="Medio: 1,97 mg/dm³"
+total_32="Total: 33,55 mg/dm³"
+count_32="Contagem: 17 "
+min_33="Minimo: 1,76 mg/dm³"
+max_33="Maximo: 7,8 mg/dm³"
+med_33="Medio: 3,76 mg/dm³"
+total_33="Total: 233,25 mg/dm³"
+count_33="Contagem: 62 "
+
 
 
 # Variaveis posicao da legenda
@@ -2388,7 +2389,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Calcio (cmol/dm)', interval=0.1)
+pyautogui.write('Ca (cmol/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -2641,7 +2642,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Magnesio (cmol/dm)', interval=0.1)
+pyautogui.write('Mg (cmol/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -2915,7 +2916,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Calcio mais Magnesio (cmol/dm)', interval=0.1)
+pyautogui.write('Ca + Mg (cmol/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -3105,7 +3106,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Aluminio (cmol/dm)', interval=0.1)
+pyautogui.write('Al (cmol/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -3279,7 +3280,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Hidrogenio mais Aluminio (cmol/dm)', interval=0.1)
+pyautogui.write('H + Al (cmol/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -3643,7 +3644,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Potassio ppm (mg/dm)', interval=0.1)
+pyautogui.write('K ppm (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -3997,7 +3998,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Fosforo Mehlich (mg/dm)', interval=0.1)
+pyautogui.write('P-Mehlich (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -4171,7 +4172,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Potassio (cmol/dm)', interval=0.1)
+pyautogui.write('K (cmol/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -4396,7 +4397,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Enxofre (mg/dm)', interval=0.1)
+pyautogui.write('S (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -4578,7 +4579,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Boro (mg/dm)', interval=0.1)
+pyautogui.write('B (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -4760,7 +4761,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Calcio CTC (%)', interval=0.1)
+pyautogui.write('Ca CTC (%)', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -5004,7 +5005,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Magnesio CTC (%)', interval=0.1)
+pyautogui.write('Mg CTC (%)', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -5186,7 +5187,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Potassio CTC (%)', interval=0.1)
+pyautogui.write('K CTC (%)', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -5377,7 +5378,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Hidrogenio mais Aluminio CTC (%)', interval=0.1)
+pyautogui.write('H + Al CTC (%)', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -5567,7 +5568,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Relacao Calcio Magnesio', interval=0.1)
+pyautogui.write('Ca/Mg', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -5757,7 +5758,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Relacao Calcio Potassio', interval=0.1)
+pyautogui.write('Ca/K', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -5947,7 +5948,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Relacao Magenesio Potassio', interval=0.1)
+pyautogui.write('Mg/K', interval=0.1)
 sleep(1)
 # pyautogui.press('left')
 # pyautogui.hotkey('ctrl', 'alt', '3')
@@ -6147,7 +6148,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Cobre (mg/dm)', interval=0.1)
+pyautogui.write('Cu (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -6321,7 +6322,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Ferro (mg/dm)', interval=0.1)
+pyautogui.write('Feo (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -6503,7 +6504,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Manganes (mg/dm)', interval=0.1)
+pyautogui.write('Mn (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -6677,7 +6678,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Zinco (mg/dm)', interval=0.1)
+pyautogui.write('Zn (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
@@ -6851,7 +6852,7 @@ sleep(1)
 # alter legend title
 pyautogui.doubleClick(1007, 287, duration=0.5)
 sleep(1)
-pyautogui.write('Sodio (mg/dm)', interval=0.1)
+pyautogui.write('Na (mg/dm)', interval=0.1)
 sleep(1)
 pyautogui.press('left')
 pyautogui.hotkey('ctrl', 'alt', '3')
