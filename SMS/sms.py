@@ -2,27 +2,27 @@ import pyautogui
 from time import sleep
 
 # Coordenada Selecionar atributo
-select_atribute_coordinate_X = 1167
-select_atribute_coordinate_Y = 222
+select_atribute_coordinate_X = 1772
+select_atribute_coordinate_Y = 219
 
 # Coordenadas centro do mapa
-center_map_coordinate_X = 788
-center_map_coordinate_Y = 451
+center_map_coordinate_X = 1017
+center_map_coordinate_Y = 572
 
 # Coordenadas botao exportar
-export_button_coordinate_X = 848
-export_button_coordinate_Y = 413
+export_button_coordinate_X = 1077
+export_button_coordinate_Y = 513
 
 # Coordenadas botao iniciar processo de exportacao de arquivo generico
-init_export_coordinate_X = 602
-init_export_coordinate_Y = 605
+init_export_coordinate_X = 901
+init_export_coordinate_Y = 766
 
 # Coordenadas exportar para o formato de arquivo selecionado
-export_format_coordinate_X = 518
-export_format_coordinate_Y = 600
+export_format_coordinate_X = 795
+export_format_coordinate_Y = 761
 
 # Tempo de execução do atributo
-execution_atribute_time = 45
+execution_atribute_time = 360
 
 # 10_Saturacao_de_Bases
 pyautogui.click(select_atribute_coordinate_X,
